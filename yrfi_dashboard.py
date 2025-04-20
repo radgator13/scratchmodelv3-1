@@ -23,13 +23,17 @@ live = pd.read_csv("data/yrfi_model_input_live_with_era.csv")
 live = dedupe_columns(live)
 live["Game Date"] = pd.to_datetime(live["date"]).dt.date
 
-# Calculate actual YRFI outcome based on scores
-live["YRFI_actual"] = ((live["Away 1st_x"].fillna(0) > 0) | (live["Home 1st_x"].fillna(0) > 0)).astype(int)
+# === Identify correct 1st inning score columns dynamically ===
+away_1st_col = [col for col in live.columns if col.startswith("Away 1st")][0]
+home_1st_col = [col for col in live.columns if col.startswith("Home 1st")][0]
 
-# Rename for compatibility if needed
+# === Compute actual YRFI based on real scores ===
+live["YRFI_actual"] = ((live[away_1st_col].fillna(0) > 0) | (live[home_1st_col].fillna(0) > 0)).astype(int)
+
+# === Rename prediction column ===
 live.rename(columns={"YRFI": "YRFI_pred"}, inplace=True)
 
-# === Fireball Confidence ===
+# === Fireball Confidence Icons ===
 def to_fireballs(p):
     if p >= 0.80: return "🔥🔥🔥🔥🔥"
     elif p >= 0.60: return "🔥🔥🔥🔥"
@@ -63,7 +67,7 @@ selected_date = st.date_input("📅 Select Game Date", value=default_date,
 # === Filter for Selected Date ===
 filtered = live[live["Game Date"] == selected_date]
 
-# === Main Table ===
+# === Main Table Display ===
 if not filtered.empty:
     st.subheader(f"📋 Games for {selected_date.strftime('%Y-%m-%d')}")
     display_cols = ["away_team", "home_team", "YRFI_pred", "YRFI🔥", "NRFI🔥", "YRFI_actual", "Correct"]
@@ -96,7 +100,7 @@ with col2:
     st.metric("Incorrect", cumulative_wrong)
     st.metric("Total", cumulative_total)
 
-# === Fireball Tier Performance
+# === Fireball Tier Performance ===
 st.markdown("---")
 st.subheader("🔥 Fireball Tier Performance")
 
@@ -113,7 +117,7 @@ tier_stats = tier_stats.reindex(tiers).fillna(0).astype(int)
 
 st.dataframe(tier_stats, use_container_width=True)
 
-# === Compact Summary
+# === Compact Tier Summary ===
 st.markdown("---")
 st.subheader("🔥 Fireball Accuracy Summary (Compact View)")
 
