@@ -23,12 +23,12 @@ with open(touch_file, "w") as f:
 
 # === STEP 5: Git commit + push
 print("📤 Step 4: Committing and pushing updates to GitHub...")
-os.system("git add .")  # Adds everything (data, .txt, .py, .csv, etc.)
+os.system("git add .")  # Includes all .py, .csv, .txt, etc.
 os.system(f'git commit -m "🤖 Auto push from pipeline @ {timestamp}"')
 os.system("git push origin main")
 
 # === STEP 6: Launch dashboard (local only)
 print("📈 Step 5: Launching Streamlit dashboard...")
-os.system("start streamlit run yrfi_dashboard.py")  # For Windows
+os.system("start streamlit run yrfi_dashboard.py")  # For Windows users
 
 print("✅ ScratchModelV3.1 pipeline complete.")
