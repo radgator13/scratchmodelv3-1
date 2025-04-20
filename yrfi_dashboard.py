@@ -6,39 +6,30 @@ from datetime import datetime, timedelta
 st.set_page_config(page_title="YRFI Dashboard", layout="wide")
 st.title("🔥 YRFI Prediction Dashboard")
 
-# === Load Data ===
-preds = pd.read_csv("data/yrfi_predictions_pregame_with_odds.csv")
-live = pd.read_csv("data/yrfi_model_input_live_with_era.csv")
-
-# 🛠 Remove duplicate column names (e.g. Game Date, Away Team)
+# === Safe Deduplication ===
 def dedupe_columns(df):
-    base = pd.io.parsers.ParserBase({'names': df.columns})
-    df.columns = base._maybe_dedup_names(df.columns)
+    cols = pd.Series(df.columns)
+    for dup in cols[cols.duplicated()].unique():
+        dup_idx = cols[cols == dup].index.tolist()
+        for i, idx in enumerate(dup_idx):
+            if i == 0:
+                continue
+            cols[idx] = f"{cols[idx]}.{i}"
+    df.columns = cols
     return df
 
-preds = dedupe_columns(preds)
+# === Load Data ===
+live = pd.read_csv("data/yrfi_model_input_live_with_era.csv")
 live = dedupe_columns(live)
+live["Game Date"] = pd.to_datetime(live["date"]).dt.date
 
-# Standardize date columns
-preds["Game Date"] = pd.to_datetime(preds["Game Date"])
-live["Game Date"] = pd.to_datetime(live["date"])  # 'date' is the actual name
+# Calculate actual YRFI outcome based on scores
+live["YRFI_actual"] = ((live["Away 1st_x"].fillna(0) > 0) | (live["Home 1st_x"].fillna(0) > 0)).astype(int)
 
-# === Clean merge keys ===
-merge_keys = ["Game Date", "Away Team", "Home Team"]
-preds = preds.drop_duplicates(subset=merge_keys)
-live = live.drop_duplicates(subset=["Game Date", "Away Team", "Home Team"])
+# Rename for compatibility if needed
+live.rename(columns={"YRFI": "YRFI_pred"}, inplace=True)
 
-# === Merge & Add Actual YRFI outcomes based on first inning scores ===
-merged = preds.merge(
-    live[["Game Date", "Away Team", "Home Team", "Away 1st_x", "Home 1st_x"]],
-    on=["Game Date", "Away Team", "Home Team"],
-    how="left"
-)
-
-# Create YRFI result using first-inning scores
-merged["YRFI"] = ((merged["Away 1st_x"].fillna(0) > 0) | (merged["Home 1st_x"].fillna(0) > 0)).astype(int)
-
-# === Fireball Tiers ===
+# === Fireball Confidence ===
 def to_fireballs(p):
     if p >= 0.80: return "🔥🔥🔥🔥🔥"
     elif p >= 0.60: return "🔥🔥🔥🔥"
@@ -46,73 +37,64 @@ def to_fireballs(p):
     elif p >= 0.20: return "🔥🔥"
     else: return "🔥"
 
-merged["YRFI🔥"] = merged["YRFI_Prob"].apply(to_fireballs)
-merged["NRFI🔥"] = merged["NRFI_Prob"].apply(lambda x: to_fireballs(1 - x))
+live["YRFI🔥"] = live["YRFI_pred"].apply(to_fireballs)
+live["NRFI🔥"] = (1 - live["YRFI_pred"]).apply(to_fireballs)
 
-# === Define hit/miss outcome ===
+# === Define Correct/Incorrect Outcome ===
 def outcome_check(row):
-    if pd.isna(row["YRFI"]): return ""
-    correct = (
-        (row["YRFI_Prob"] >= 0.5 and row["YRFI"] == 1) or
-        (row["YRFI_Prob"] < 0.5 and row["YRFI"] == 0)
-    )
-    return "✅" if correct else "❌"
+    if pd.isna(row["YRFI_actual"]): return ""
+    return "✅" if (row["YRFI_pred"] >= 0.5 and row["YRFI_actual"] == 1) or \
+                  (row["YRFI_pred"] < 0.5 and row["YRFI_actual"] == 0) else "❌"
 
-merged["Correct"] = merged.apply(outcome_check, axis=1)
+live["Correct"] = live.apply(outcome_check, axis=1)
 
-# === Calendar Selector ===
+# === Calendar Picker ===
+available_dates = sorted(live["Game Date"].unique())
 today = datetime.today().date()
 tomorrow = today + timedelta(days=1)
-available_dates = sorted(merged["Game Date"].dt.date.unique())
+if today not in available_dates: available_dates.append(today)
+if tomorrow not in available_dates: available_dates.append(tomorrow)
+available_dates = sorted(set(available_dates))
+default_date = tomorrow if tomorrow in available_dates else today
 
-# Add today and tomorrow if missing
-available_dates = sorted(set(available_dates + [today, tomorrow]))
+selected_date = st.date_input("📅 Select Game Date", value=default_date,
+                              min_value=min(available_dates), max_value=max(available_dates))
 
-selected_date = st.date_input(
-    "📅 Select Game Date",
-    value=tomorrow if tomorrow in available_dates else today,
-    min_value=min(available_dates),
-    max_value=max(available_dates)
-)
+# === Filter for Selected Date ===
+filtered = live[live["Game Date"] == selected_date]
 
-# === Filter for Display ===
-filtered = merged[merged["Game Date"].dt.date == selected_date]
-
+# === Main Table ===
 if not filtered.empty:
     st.subheader(f"📋 Games for {selected_date.strftime('%Y-%m-%d')}")
-    display_cols = ["Away Team", "Home Team", "YRFI_Prob", "YRFI🔥", "NRFI_Prob", "NRFI🔥", "YRFI", "Correct"]
-    st.dataframe(filtered[display_cols].sort_values("YRFI_Prob", ascending=False), use_container_width=True)
+    display_cols = ["away_team", "home_team", "YRFI_pred", "YRFI🔥", "NRFI🔥", "YRFI_actual", "Correct"]
+    st.dataframe(filtered[display_cols].sort_values("YRFI_pred", ascending=False), use_container_width=True)
 else:
     st.warning("No predictions available for this date.")
 
-# === Accuracy Summary ===
+# === Accuracy Metrics ===
+today_total = filtered.shape[0]
+today_correct = (filtered["Correct"] == "✅").sum()
+today_wrong = (filtered["Correct"] == "❌").sum()
+cumulative = live[live["Game Date"] <= selected_date]
+cumulative_total = cumulative.shape[0]
+cumulative_correct = (cumulative["Correct"] == "✅").sum()
+cumulative_wrong = (cumulative["Correct"] == "❌").sum()
+
 st.markdown("---")
 st.subheader("📊 Prediction Accuracy Summary")
 
 col1, col2 = st.columns(2)
-
-# Daily Accuracy
-today_total = filtered.shape[0]
-today_correct = (filtered["Correct"] == "✅").sum()
-today_wrong = (filtered["Correct"] == "❌").sum()
-
 with col1:
     st.markdown("#### 📅 Daily Accuracy")
     st.metric("Correct", today_correct)
     st.metric("Incorrect", today_wrong)
-    st.metric("Total Predictions", today_total)
-
-# Cumulative Accuracy
-cumulative = merged[merged["Game Date"].dt.date <= selected_date]
-cumulative_total = cumulative.shape[0]
-cumulative_correct = (cumulative["Correct"] == "✅").sum()
-cumulative_wrong = (cumulative["Correct"] == "❌").sum()
+    st.metric("Total", today_total)
 
 with col2:
     st.markdown("#### 🔁 Cumulative Accuracy")
     st.metric("Correct", cumulative_correct)
     st.metric("Incorrect", cumulative_wrong)
-    st.metric("Total Predictions", cumulative_total)
+    st.metric("Total", cumulative_total)
 
 # === Fireball Tier Performance
 st.markdown("---")
@@ -120,48 +102,45 @@ st.subheader("🔥 Fireball Tier Performance")
 
 tiers = ["🔥", "🔥🔥", "🔥🔥🔥", "🔥🔥🔥🔥", "🔥🔥🔥🔥🔥"]
 fire_df = cumulative[cumulative["YRFI🔥"].isin(tiers)]
-
 tier_stats = (
     fire_df.groupby("YRFI🔥")["Correct"]
-    .value_counts()
-    .unstack(fill_value=0)
+    .value_counts().unstack(fill_value=0)
     .rename(columns={"✅": "Correct", "❌": "Incorrect"})
 )
-
-tier_stats["Total"] = tier_stats["Correct"] + tier_stats["Incorrect"]
+tier_stats["Total"] = tier_stats.sum(axis=1)
 tier_stats["Accuracy %"] = (tier_stats["Correct"] / tier_stats["Total"].replace(0, 1) * 100).round(1)
 tier_stats = tier_stats.reindex(tiers).fillna(0).astype(int)
 
 st.dataframe(tier_stats, use_container_width=True)
 
-# === Compact Fireball Summary
+# === Compact Summary
 st.markdown("---")
 st.subheader("🔥 Fireball Accuracy Summary (Compact View)")
 
 def summarize_fireballs(df):
-    result = {}
+    summary = {}
     for tier in tiers:
         subset = df[df["YRFI🔥"] == tier]
         correct = (subset["Correct"] == "✅").sum()
         incorrect = (subset["Correct"] == "❌").sum()
         total = correct + incorrect
-        result[tier] = {"Correct": correct, "Incorrect": incorrect, "Total": total}
-    return result
+        summary[tier] = {"Correct": correct, "Incorrect": incorrect, "Total": total}
+    return summary
 
-daily_stats = summarize_fireballs(filtered)
-rolling_stats = summarize_fireballs(cumulative)
+daily_summary = summarize_fireballs(filtered)
+rolling_summary = summarize_fireballs(cumulative)
 
-rows = []
+summary_rows = []
 for tier in tiers:
-    rows.append({
+    summary_rows.append({
         "Tier": tier,
-        "Daily Correct": daily_stats[tier]["Correct"],
-        "Daily Incorrect": daily_stats[tier]["Incorrect"],
-        "Daily Total": daily_stats[tier]["Total"],
-        "Rolling Correct": rolling_stats[tier]["Correct"],
-        "Rolling Incorrect": rolling_stats[tier]["Incorrect"],
-        "Rolling Total": rolling_stats[tier]["Total"],
+        "Daily Correct": daily_summary[tier]["Correct"],
+        "Daily Incorrect": daily_summary[tier]["Incorrect"],
+        "Daily Total": daily_summary[tier]["Total"],
+        "Rolling Correct": rolling_summary[tier]["Correct"],
+        "Rolling Incorrect": rolling_summary[tier]["Incorrect"],
+        "Rolling Total": rolling_summary[tier]["Total"],
     })
 
-summary_df = pd.DataFrame(rows)
+summary_df = pd.DataFrame(summary_rows)
 st.dataframe(summary_df.set_index("Tier"), use_container_width=True)
