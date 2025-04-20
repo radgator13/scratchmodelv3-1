@@ -52,7 +52,16 @@ df["YRFI🔥"] = df["YRFI_Prob"].apply(to_fireballs)
 df["NRFI🔥"] = df["NRFI_Prob"].apply(to_fireballs)
 
 # === Save final output
-df.rename(columns={"date": "Game Date"}, inplace=True)  # ✅ Streamlit needs this
+# === Save final output with dashboard-friendly column names
+df.rename(columns={
+    "date": "Game Date",
+    "away_team": "Away Team",
+    "home_team": "Home Team",
+    "away_hand": "Away Hand",
+    "home_hand": "Home Hand"
+}, inplace=True)
+
 output_path = DATA_DIR / "yrfi_predictions_pregame_with_odds.csv"
 df.to_csv(output_path, index=False)
 print(f"✅ Saved predictions to {output_path}")
+
