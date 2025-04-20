@@ -1,54 +1,61 @@
-﻿# predict_today.py
-import pandas as pd
+﻿import pandas as pd
+import joblib
 import numpy as np
 from pathlib import Path
-import joblib
+from sklearn.preprocessing import OneHotEncoder
 
+# === Setup paths ===
 DATA_DIR = Path("data")
 MODEL_DIR = Path("model")
+MODEL_PATH = MODEL_DIR / "yrfi_xgb_model.pkl"
+ENCODER_PATH = MODEL_DIR / "yrfi_encoder.pkl"
 
-# Load model and encoder
-model = joblib.load(MODEL_DIR / "yrfi_xgb_model.pkl")
-encoder = joblib.load(MODEL_DIR / "yrfi_encoder.pkl")
-
-# Load today's matchups
+# === Load data ===
 df = pd.read_csv(DATA_DIR / "today_matchups.csv", parse_dates=["Game Date"])
-
-
-
-# Create features
 df["day_of_week"] = df["Game Date"].dt.dayofweek
-df["same_hand"] = (df["away_hand"] == df["home_hand"]).astype(int)
 
-# Clean starter names
-df["away_starter_clean"] = df["away_starter"].str.strip()
-df["home_starter_clean"] = df["home_starter"].str.strip()
+# === Optional: Build same_hand flag
+if "away_hand" in df.columns and "home_hand" in df.columns:
+    df["same_hand"] = (df["away_hand"] == df["home_hand"]).astype(int)
+else:
+    df["same_hand"] = 0
 
-# Columns
+# === Define feature sets
 categorical_cols = ["away_team", "home_team", "away_hand", "home_hand"]
 numeric_cols = [
     "home_era", "away_era", "home_team_avg_1st", "away_team_avg_1st",
     "day_of_week", "same_hand"
 ]
 
-# Drop incomplete rows
-df = df.dropna(subset=categorical_cols + numeric_cols)
+# Drop any rows missing required columns
+required_cols = numeric_cols + categorical_cols
+df = df.dropna(subset=required_cols)
 
-# Preprocess
+# === One-hot encode categoricals
+encoder = joblib.load(ENCODER_PATH)
 X_cat = encoder.transform(df[categorical_cols])
 X_num = df[numeric_cols].values
 X = np.hstack([X_cat, X_num])
 
-# Predict
-df["yrfi_probability"] = model.predict_proba(X)[:, 1]
-df["yrfi_predicted"] = (df["yrfi_probability"] >= 0.5).astype(int)
+# === Load model
+model = joblib.load(MODEL_PATH)
 
-# Output
-output_path = DATA_DIR / "today_yrfi_predictions.csv"
+# === Predict
+df["YRFI_Prob"] = model.predict_proba(X)[:, 1]
+df["NRFI_Prob"] = 1 - df["YRFI_Prob"]
+
+# === Fireballs
+def to_fireballs(p):
+    if p >= 0.80: return "🔥🔥🔥🔥🔥"
+    elif p >= 0.60: return "🔥🔥🔥🔥"
+    elif p >= 0.40: return "🔥🔥🔥"
+    elif p >= 0.20: return "🔥🔥"
+    else: return "🔥"
+
+df["YRFI🔥"] = df["YRFI_Prob"].apply(to_fireballs)
+df["NRFI🔥"] = df["NRFI_Prob"].apply(to_fireballs)
+
+# === Save output
+output_path = DATA_DIR / "yrfi_predictions_pregame_with_odds.csv"
 df.to_csv(output_path, index=False)
-
-print(f"✅ Predictions saved to: {output_path.resolve()}")
-print(df[[
-    "date", "away_team", "home_team", "away_starter", "home_starter",
-    "yrfi_probability", "yrfi_predicted"
-]].round(3).head())
+print(f"✅ Saved predictions to {output_path}")
