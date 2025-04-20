@@ -18,21 +18,39 @@ def dedupe_columns(df):
     df.columns = cols
     return df
 
-# === Load Data ===
-live = pd.read_csv("data/yrfi_model_input_live_with_era.csv")
-live = dedupe_columns(live)
-live["Game Date"] = pd.to_datetime(live["date"]).dt.date
-
-# Use actual outcome from data, rename it for clarity
-if "YRFI" in live.columns:
-    live.rename(columns={"YRFI": "YRFI_actual"}, inplace=True)
-
-# Make sure prediction column exists
-if "YRFI_Prob" not in live.columns:
-    st.error("❌ YRFI_Prob column missing from data. Check your model output.")
+# === Load and Prepare Data ===
+try:
+    live = pd.read_csv("data/yrfi_model_input_live_with_era.csv")
+    live = dedupe_columns(live)
+except Exception as e:
+    st.error(f"💥 Failed to load data file: {e}")
     st.stop()
 
-# === Fireball Confidence ===
+# === Check Required Columns ===
+required_cols = ["date", "Away 1st_x", "Home 1st_x", "YRFI"]
+missing_cols = [col for col in required_cols if col not in live.columns]
+
+if missing_cols:
+    st.error(f"❌ Missing required column(s): {', '.join(missing_cols)}")
+    st.stop()
+
+# === Convert Date and Set Predictions ===
+live["Game Date"] = pd.to_datetime(live["date"]).dt.date
+live.rename(columns={"YRFI": "YRFI_pred"}, inplace=True)
+
+# === Compute actual YRFI result from scores ===
+live["YRFI_actual"] = ((live["Away 1st_x"].fillna(0) > 0) | (live["Home 1st_x"].fillna(0) > 0)).astype(int)
+
+# === Debug View: Show column summary ===
+st.markdown("### 🛠 Data Debug Info")
+debug_info = {
+    "Total Rows": len(live),
+    "Columns Present": list(live.columns),
+    "Sample Predictions": live["YRFI_pred"].head(5).tolist(),
+}
+st.code(str(debug_info), language="python")
+
+# === Confidence Fireball 🔥 Tiers ===
 def to_fireballs(p):
     if p >= 0.80: return "🔥🔥🔥🔥🔥"
     elif p >= 0.60: return "🔥🔥🔥🔥"
@@ -40,14 +58,14 @@ def to_fireballs(p):
     elif p >= 0.20: return "🔥🔥"
     else: return "🔥"
 
-live["YRFI🔥"] = live["YRFI_Prob"].apply(to_fireballs)
-live["NRFI🔥"] = (1 - live["YRFI_Prob"]).apply(to_fireballs)
+live["YRFI🔥"] = live["YRFI_pred"].apply(to_fireballs)
+live["NRFI🔥"] = (1 - live["YRFI_pred"]).apply(to_fireballs)
 
 # === Define Correct/Incorrect Outcome ===
 def outcome_check(row):
     if pd.isna(row["YRFI_actual"]): return ""
-    return "✅" if (row["YRFI_Prob"] >= 0.5 and row["YRFI_actual"] == 1) or \
-                  (row["YRFI_Prob"] < 0.5 and row["YRFI_actual"] == 0) else "❌"
+    return "✅" if (row["YRFI_pred"] >= 0.5 and row["YRFI_actual"] == 1) or \
+                  (row["YRFI_pred"] < 0.5 and row["YRFI_actual"] == 0) else "❌"
 
 live["Correct"] = live.apply(outcome_check, axis=1)
 
@@ -69,15 +87,10 @@ filtered = live[live["Game Date"] == selected_date]
 # === Main Table ===
 if not filtered.empty:
     st.subheader(f"📋 Games for {selected_date.strftime('%Y-%m-%d')}")
-    display_cols = ["away_team", "home_team", "YRFI_Prob", "YRFI🔥", "NRFI🔥", "YRFI_actual", "Correct"]
-    st.dataframe(filtered[display_cols].sort_values("YRFI_Prob", ascending=False), use_container_width=True)
+    display_cols = ["away_team", "home_team", "YRFI_pred", "YRFI🔥", "NRFI🔥", "YRFI_actual", "Correct"]
+    st.dataframe(filtered[display_cols].sort_values("YRFI_pred", ascending=False), use_container_width=True)
 else:
     st.warning("No predictions available for this date.")
-
-# === Debug Table (ALWAYS SHOW TOP 10 ROWS)
-st.markdown("### 🐛 Debug Output: First 10 Records")
-debug_cols = ["Game Date", "away_team", "home_team", "YRFI_Prob", "YRFI_actual", "YRFI🔥", "Correct"]
-st.dataframe(live[debug_cols].sort_values("Game Date", ascending=False).head(10))
 
 # === Accuracy Metrics ===
 today_total = filtered.shape[0]
