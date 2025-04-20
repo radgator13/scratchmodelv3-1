@@ -15,8 +15,9 @@ encoder = joblib.load(MODEL_DIR / "yrfi_encoder.pkl")
 df = pd.read_csv(DATA_DIR / "today_matchups.csv", parse_dates=["Game Date"])
 
 
+
 # Create features
-df["day_of_week"] = df["date"].dt.dayofweek
+df["day_of_week"] = df["Game Date"].dt.dayofweek
 df["same_hand"] = (df["away_hand"] == df["home_hand"]).astype(int)
 
 # Clean starter names
