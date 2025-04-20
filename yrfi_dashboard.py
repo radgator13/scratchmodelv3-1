@@ -41,7 +41,7 @@ live.rename(columns={"YRFI": "YRFI_pred"}, inplace=True)
 # === Compute actual YRFI result from scores ===
 live["YRFI_actual"] = ((live["Away 1st_x"].fillna(0) > 0) | (live["Home 1st_x"].fillna(0) > 0)).astype(int)
 
-# === Debug View: Show column summary ===
+# === Debug Info ===
 st.markdown("### 🛠 Data Debug Info")
 debug_info = {
     "Total Rows": len(live),
@@ -61,7 +61,7 @@ def to_fireballs(p):
 live["YRFI🔥"] = live["YRFI_pred"].apply(to_fireballs)
 live["NRFI🔥"] = (1 - live["YRFI_pred"]).apply(to_fireballs)
 
-# === Define Correct/Incorrect Outcome ===
+# === Correct/Incorrect Outcome ===
 def outcome_check(row):
     if pd.isna(row["YRFI_actual"]): return ""
     return "✅" if (row["YRFI_pred"] >= 0.5 and row["YRFI_actual"] == 1) or \
@@ -92,7 +92,7 @@ if not filtered.empty:
 else:
     st.warning("No predictions available for this date.")
 
-# === Accuracy Metrics ===
+# === Accuracy Summary ===
 today_total = filtered.shape[0]
 today_correct = (filtered["Correct"] == "✅").sum()
 today_wrong = (filtered["Correct"] == "❌").sum()
