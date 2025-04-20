@@ -10,6 +10,11 @@ st.title("🔥 YRFI Prediction Dashboard")
 preds = pd.read_csv("data/yrfi_predictions_pregame_with_odds.csv")
 live = pd.read_csv("data/yrfi_model_input_live_with_era.csv")
 
+# Drop duplicate columns if any (like repeated 'Game Date')
+preds = preds.loc[:, ~preds.columns.duplicated()]
+live = live.loc[:, ~live.columns.duplicated()]
+
+
 # Normalize column names
 preds["Game Date"] = pd.to_datetime(preds["Game Date"])
 live["Game Date"] = pd.to_datetime(live["date"])
