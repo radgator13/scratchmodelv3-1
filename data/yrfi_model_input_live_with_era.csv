@@ -1,0 +1,311 @@
+date,Away Team,Away Record,Away Score,Home Team,Home Record,Home Score,Away 1st_x,Home 1st_x,YRFI,away_team,home_team,away_starter,away_hand,home_starter,home_hand,Away 1st_y,Home 1st_y,home_starter_clean,home_era,away_starter_clean,away_era,day_of_week,same_hand
+2025-03-27,Chicago Cubs,1-2,10.0,Arizona Diamondbacks,0-1,6.0,0.0,1.0,1,Chicago Cubs,Arizona Diamondbacks,M. Boyd (L),L,E. Rodriguez (L),L,0.0,0.0,E. Rodriguez,4.09,M. Boyd,2.01,3,1
+2025-03-27,Los Angeles Angels,0-1,1.0,Chicago White Sox,1-0,8.0,0.0,0.0,0,Los Angeles Angels,Chicago White Sox,J. Kochanowicz (R),R,D. Martin (R),R,2.0,2.0,D. Martin,4.84,J. Kochanowicz,6.2,3,1
+2025-03-27,San Francisco Giants,1-0,6.0,Cincinnati Reds,0-1,4.0,0.0,1.0,1,San Francisco Giants,Cincinnati Reds,R. Ray (L),L,N. Martinez (R),R,0.0,0.0,N. Martinez,6.0,R. Ray,4.19,3,0
+2025-03-27,New York Mets,0-1,1.0,Houston Astros,1-0,3.0,0.0,0.0,0,New York Mets,Houston Astros,G. Canning (R),R,S. Arrighetti (R),R,0.0,0.0,S. Arrighetti,5.59,G. Canning,3.43,3,1
+2025-03-27,Cleveland Guardians,1-0,7.0,Kansas City Royals,0-1,4.0,0.0,0.0,0,Cleveland Guardians,Kansas City Royals,T. Bibee (R),R,M. Wacha (R),R,0.0,0.0,M. Wacha,4.35,T. Bibee,5.85,3,1
+2025-03-27,Detroit Tigers,0-1,4.0,Los Angeles Dodgers,3-0,5.0,0.0,0.0,0,Detroit Tigers,Los Angeles Dodgers,R. Olson (R),R,R. Sasaki (R),R,2.0,1.0,R. Sasaki,3.29,R. Olson,4.5,3,1
+2025-03-27,Pittsburgh Pirates,0-1,4.0,Miami Marlins,1-0,5.0,0.0,0.0,0,Pittsburgh Pirates,Miami Marlins,A. Heaney (L),L,M. Meyer (R),R,0.0,0.0,M. Meyer,2.63,A. Heaney,2.13,3,0
+2025-03-27,Milwaukee Brewers,0-1,2.0,New York Yankees,1-0,4.0,0.0,1.0,1,Milwaukee Brewers,New York Yankees,A. Civale (R),R,M. Stroman (R),R,1.0,2.0,M. Stroman,11.57,A. Civale,15.0,3,1
+2025-03-27,Atlanta Braves,0-1,4.0,San Diego Padres,1-0,7.0,1.0,2.0,1,Atlanta Braves,San Diego Padres,A. Smith-Shawver (R),R,N. Pivetta (R),R,0.0,1.0,N. Pivetta,1.57,A. Smith-Shawver,4.61,3,1
+2025-03-27,Minnesota Twins,0-1,3.0,St. Louis Cardinals,1-0,5.0,0.0,1.0,1,Minnesota Twins,St. Louis Cardinals,B. Ober (R),R,A. Pallante (R),R,1.0,0.0,A. Pallante,3.22,B. Ober,6.16,3,1
+2025-03-27,Boston Red Sox,1-0,5.0,Texas Rangers,0-1,2.0,0.0,0.0,0,Boston Red Sox,Texas Rangers,R. Fitts (R),R,J. deGrom (R),R,0.0,0.0,J. deGrom,3.32,R. Fitts,3.18,3,1
+2025-03-27,Baltimore Orioles,1-0,12.0,Toronto Blue Jays,0-1,2.0,1.0,0.0,1,Baltimore Orioles,Toronto Blue Jays,T. Sugano (R),R,C. Bassitt (R),R,1.0,2.0,C. Bassitt,0.77,T. Sugano,3.43,3,1
+2025-03-27,Philadelphia Phillies,1-0,7.0,Washington Nationals,0-1,3.0,0.0,0.0,0,Philadelphia Phillies,Washington Nationals,A. Nola (R),R,M. Parker (L),L,0.0,0.0,M. Parker,1.85,A. Nola,6.65,3,0
+2025-03-28,Chicago Cubs,1-3,1.0,Arizona Diamondbacks,1-1,8.0,0.0,0.0,0,Chicago Cubs,Arizona Diamondbacks,M. Boyd (L),L,E. Rodriguez (L),L,0.0,0.0,E. Rodriguez,4.09,M. Boyd,2.01,4,1
+2025-03-28,New York Mets,1-1,3.0,Houston Astros,1-1,1.0,0.0,0.0,0,New York Mets,Houston Astros,G. Canning (R),R,S. Arrighetti (R),R,0.0,0.0,S. Arrighetti,5.59,G. Canning,3.43,4,1
+2025-03-28,Detroit Tigers,0-2,5.0,Los Angeles Dodgers,4-0,8.0,0.0,0.0,0,Detroit Tigers,Los Angeles Dodgers,R. Olson (R),R,R. Sasaki (R),R,2.0,1.0,R. Sasaki,3.29,R. Olson,4.5,4,1
+2025-03-28,Pittsburgh Pirates,1-1,4.0,Miami Marlins,1-1,3.0,0.0,0.0,0,Pittsburgh Pirates,Miami Marlins,A. Heaney (L),L,M. Meyer (R),R,0.0,0.0,M. Meyer,2.63,A. Heaney,2.13,4,0
+2025-03-28,Atlanta Braves,0-2,3.0,San Diego Padres,2-0,4.0,0.0,1.0,1,Atlanta Braves,San Diego Padres,A. Smith-Shawver (R),R,N. Pivetta (R),R,0.0,1.0,N. Pivetta,1.57,A. Smith-Shawver,4.61,4,1
+2025-03-28,Colorado Rockies,0-1,2.0,Tampa Bay Rays,1-0,3.0,0.0,0.0,0,Colorado Rockies,Tampa Bay Rays,R. Feltner (R),R,T. Bradley (R),R,0.0,2.0,T. Bradley,5.24,R. Feltner,4.82,4,1
+2025-03-28,Boston Red Sox,1-1,1.0,Texas Rangers,1-1,4.0,0.0,0.0,0,Boston Red Sox,Texas Rangers,R. Fitts (R),R,J. deGrom (R),R,0.0,0.0,J. deGrom,3.32,R. Fitts,3.18,4,1
+2025-03-28,Baltimore Orioles,1-1,2.0,Toronto Blue Jays,1-1,8.0,0.0,0.0,0,Baltimore Orioles,Toronto Blue Jays,T. Sugano (R),R,C. Bassitt (R),R,1.0,2.0,C. Bassitt,0.77,T. Sugano,3.43,4,1
+2025-03-29,Chicago Cubs,2-3,4.0,Arizona Diamondbacks,1-2,3.0,0.0,0.0,0,Chicago Cubs,Arizona Diamondbacks,M. Boyd (L),L,E. Rodriguez (L),L,0.0,0.0,E. Rodriguez,4.09,M. Boyd,2.01,5,1
+2025-03-29,Los Angeles Angels,1-1,1.0,Chicago White Sox,1-1,0.0,0.0,0.0,0,Los Angeles Angels,Chicago White Sox,J. Kochanowicz (R),R,D. Martin (R),R,2.0,2.0,D. Martin,4.84,J. Kochanowicz,6.2,5,1
+2025-03-29,San Francisco Giants,1-1,2.0,Cincinnati Reds,1-1,3.0,0.0,0.0,0,San Francisco Giants,Cincinnati Reds,R. Ray (L),L,N. Martinez (R),R,0.0,0.0,N. Martinez,6.0,R. Ray,4.19,5,0
+2025-03-29,New York Mets,1-2,1.0,Houston Astros,2-1,2.0,0.0,0.0,0,New York Mets,Houston Astros,G. Canning (R),R,S. Arrighetti (R),R,0.0,0.0,S. Arrighetti,5.59,G. Canning,3.43,5,1
+2025-03-29,Cleveland Guardians,1-1,3.0,Kansas City Royals,1-1,4.0,0.0,0.0,0,Cleveland Guardians,Kansas City Royals,T. Bibee (R),R,M. Wacha (R),R,0.0,0.0,M. Wacha,4.35,T. Bibee,5.85,5,1
+2025-03-29,Detroit Tigers,0-3,3.0,Los Angeles Dodgers,5-0,7.0,2.0,1.0,1,Detroit Tigers,Los Angeles Dodgers,R. Olson (R),R,R. Sasaki (R),R,2.0,1.0,R. Sasaki,3.29,R. Olson,4.5,5,1
+2025-03-29,Pittsburgh Pirates,1-2,4.0,Miami Marlins,2-1,5.0,1.0,0.0,1,Pittsburgh Pirates,Miami Marlins,A. Heaney (L),L,M. Meyer (R),R,0.0,0.0,M. Meyer,2.63,A. Heaney,2.13,5,0
+2025-03-29,Milwaukee Brewers,0-2,9.0,New York Yankees,2-0,20.0,0.0,4.0,1,Milwaukee Brewers,New York Yankees,A. Civale (R),R,M. Stroman (R),R,1.0,2.0,M. Stroman,11.57,A. Civale,15.0,5,1
+2025-03-29,Atlanta Braves,0-3,0.0,San Diego Padres,3-0,1.0,0.0,0.0,0,Atlanta Braves,San Diego Padres,A. Smith-Shawver (R),R,N. Pivetta (R),R,0.0,1.0,N. Pivetta,1.57,A. Smith-Shawver,4.61,5,1
+2025-03-29,Minnesota Twins,0-2,1.0,St. Louis Cardinals,2-0,5.0,0.0,1.0,1,Minnesota Twins,St. Louis Cardinals,B. Ober (R),R,A. Pallante (R),R,1.0,0.0,A. Pallante,3.22,B. Ober,6.16,5,1
+2025-03-29,Colorado Rockies,1-1,2.0,Tampa Bay Rays,1-1,1.0,0.0,0.0,0,Colorado Rockies,Tampa Bay Rays,R. Feltner (R),R,T. Bradley (R),R,0.0,2.0,T. Bradley,5.24,R. Feltner,4.82,5,1
+2025-03-29,Boston Red Sox,1-2,3.0,Texas Rangers,2-1,4.0,0.0,2.0,1,Boston Red Sox,Texas Rangers,R. Fitts (R),R,J. deGrom (R),R,0.0,0.0,J. deGrom,3.32,R. Fitts,3.18,5,1
+2025-03-29,Baltimore Orioles,2-1,9.0,Toronto Blue Jays,1-2,5.0,2.0,2.0,1,Baltimore Orioles,Toronto Blue Jays,T. Sugano (R),R,C. Bassitt (R),R,1.0,2.0,C. Bassitt,0.77,T. Sugano,3.43,5,1
+2025-03-29,Philadelphia Phillies,2-0,11.0,Washington Nationals,0-2,6.0,0.0,0.0,0,Philadelphia Phillies,Washington Nationals,A. Nola (R),R,M. Parker (L),L,0.0,0.0,M. Parker,1.85,A. Nola,6.65,5,0
+2025-03-30,Chicago Cubs,2-4,6.0,Arizona Diamondbacks,2-2,10.0,0.0,0.0,0,Chicago Cubs,Arizona Diamondbacks,M. Boyd (L),L,E. Rodriguez (L),L,0.0,0.0,E. Rodriguez,4.09,M. Boyd,2.01,6,1
+2025-03-30,Los Angeles Angels,2-1,3.0,Chicago White Sox,1-2,2.0,2.0,2.0,1,Los Angeles Angels,Chicago White Sox,J. Kochanowicz (R),R,D. Martin (R),R,2.0,2.0,D. Martin,4.84,J. Kochanowicz,6.2,6,1
+2025-03-30,San Francisco Giants,2-1,6.0,Cincinnati Reds,1-2,3.0,0.0,0.0,0,San Francisco Giants,Cincinnati Reds,R. Ray (L),L,N. Martinez (R),R,0.0,0.0,N. Martinez,6.0,R. Ray,4.19,6,0
+2025-03-30,Cleveland Guardians,2-1,6.0,Kansas City Royals,1-2,2.0,0.0,0.0,0,Cleveland Guardians,Kansas City Royals,T. Bibee (R),R,M. Wacha (R),R,0.0,0.0,M. Wacha,4.35,T. Bibee,5.85,6,1
+2025-03-30,Pittsburgh Pirates,1-3,2.0,Miami Marlins,3-1,3.0,0.0,0.0,0,Pittsburgh Pirates,Miami Marlins,A. Heaney (L),L,M. Meyer (R),R,0.0,0.0,M. Meyer,2.63,A. Heaney,2.13,6,0
+2025-03-30,Milwaukee Brewers,0-3,3.0,New York Yankees,3-0,12.0,1.0,2.0,1,Milwaukee Brewers,New York Yankees,A. Civale (R),R,M. Stroman (R),R,1.0,2.0,M. Stroman,11.57,A. Civale,15.0,6,1
+2025-03-30,Atlanta Braves,0-4,0.0,San Diego Padres,4-0,5.0,0.0,1.0,1,Atlanta Braves,San Diego Padres,A. Smith-Shawver (R),R,N. Pivetta (R),R,0.0,1.0,N. Pivetta,1.57,A. Smith-Shawver,4.61,6,1
+2025-03-30,Minnesota Twins,0-3,2.0,St. Louis Cardinals,3-0,9.0,1.0,0.0,1,Minnesota Twins,St. Louis Cardinals,B. Ober (R),R,A. Pallante (R),R,1.0,0.0,A. Pallante,3.22,B. Ober,6.16,6,1
+2025-03-30,Colorado Rockies,1-2,4.0,Tampa Bay Rays,2-1,6.0,0.0,2.0,1,Colorado Rockies,Tampa Bay Rays,R. Feltner (R),R,T. Bradley (R),R,0.0,2.0,T. Bradley,5.24,R. Feltner,4.82,6,1
+2025-03-30,Boston Red Sox,1-3,2.0,Texas Rangers,3-1,3.0,0.0,0.0,0,Boston Red Sox,Texas Rangers,R. Fitts (R),R,J. deGrom (R),R,0.0,0.0,J. deGrom,3.32,R. Fitts,3.18,6,1
+2025-03-30,Baltimore Orioles,2-2,1.0,Toronto Blue Jays,2-2,3.0,1.0,2.0,1,Baltimore Orioles,Toronto Blue Jays,T. Sugano (R),R,C. Bassitt (R),R,1.0,2.0,C. Bassitt,0.77,T. Sugano,3.43,6,1
+2025-03-30,Philadelphia Phillies,2-1,1.0,Washington Nationals,1-2,5.0,0.0,0.0,0,Philadelphia Phillies,Washington Nationals,A. Nola (R),R,M. Parker (L),L,0.0,0.0,M. Parker,1.85,A. Nola,6.65,6,0
+2025-03-31,Boston Red Sox,1-4,5.0,Baltimore Orioles,3-2,8.0,0.0,4.0,1,Boston Red Sox,Baltimore Orioles,T. Houck (R),R,C. Morton (R),R,2.0,1.0,C. Morton,8.84,T. Houck,9.16,0,1
+2025-03-31,Minnesota Twins,0-4,0.0,Chicago White Sox,2-2,9.0,0.0,3.0,1,Minnesota Twins,Chicago White Sox,P. Lopez (R),R,S. Burke (R),R,1.0,0.0,S. Burke,7.56,P. Lopez,1.62,0,1
+2025-03-31,Texas Rangers,3-2,3.0,Cincinnati Reds,2-2,14.0,0.0,3.0,1,Texas Rangers,Cincinnati Reds,J. Leiter (R),R,H. Greene (R),R,0.0,0.0,H. Greene,0.98,J. Leiter,0.9,0,1
+2025-03-31,San Francisco Giants,3-1,7.0,Houston Astros,2-2,2.0,0.0,0.0,0,San Francisco Giants,Houston Astros,L. Roupp (R),R,F. Valdez (L),L,2.0,0.0,F. Valdez,4.91,L. Roupp,4.8,0,0
+2025-03-31,Atlanta Braves,0-5,1.0,Los Angeles Dodgers,6-0,6.0,0.0,2.0,1,Atlanta Braves,Los Angeles Dodgers,B. Elder (R),R,B. Snell (L),L,2.0,0.0,B. Snell,2.0,B. Elder,7.2,0,0
+2025-03-31,New York Mets,2-2,10.0,Miami Marlins,3-2,4.0,0.0,1.0,1,New York Mets,Miami Marlins,C. Holmes (R),R,C. Gillispie (R),R,1.0,0.0,C. Gillispie,6.63,C. Holmes,3.66,0,1
+2025-03-31,Kansas City Royals,2-2,11.0,Milwaukee Brewers,0-4,1.0,3.0,0.0,1,Kansas City Royals,Milwaukee Brewers,C. Ragans (L),L,F. Peralta (R),R,0.0,1.0,F. Peralta,1.91,C. Ragans,3.58,0,0
+2025-03-31,Colorado Rockies,1-3,1.0,Philadelphia Phillies,3-1,6.0,0.0,0.0,0,Colorado Rockies,Philadelphia Phillies,A. Senzatela (R),R,T. Walker (R),R,0.0,0.0,T. Walker,2.3,A. Senzatela,5.89,0,1
+2025-03-31,Cleveland Guardians,2-2,2.0,San Diego Padres,5-0,7.0,1.0,0.0,1,Cleveland Guardians,San Diego Padres,B. Lively (R),R,D. Cease (R),R,0.0,0.0,D. Cease,6.64,B. Lively,4.87,0,1
+2025-03-31,Detroit Tigers,1-3,9.0,Seattle Mariners,2-3,6.0,6.0,0.0,1,Detroit Tigers,Seattle Mariners,T. Skubal (L),L,L. Castillo (R),R,0.0,0.0,L. Castillo,4.22,T. Skubal,2.66,0,0
+2025-03-31,Los Angeles Angels,3-1,5.0,St. Louis Cardinals,3-1,4.0,0.0,1.0,1,Los Angeles Angels,St. Louis Cardinals,Y. Kikuchi (L),L,S. Gray (R),R,1.0,0.0,S. Gray,3.13,Y. Kikuchi,4.13,0,0
+2025-03-31,Pittsburgh Pirates,1-4,1.0,Tampa Bay Rays,3-1,6.0,0.0,0.0,0,Pittsburgh Pirates,Tampa Bay Rays,P. Skenes (R),R,R. Pepiot (R),R,0.0,0.0,R. Pepiot,4.91,P. Skenes,2.96,0,1
+2025-03-31,Washington Nationals,1-3,2.0,Toronto Blue Jays,3-2,5.0,0.0,0.0,0,Washington Nationals,Toronto Blue Jays,M. Gore (L),L,E. Lucas (L),L,0.0,1.0,E. Lucas,4.7,M. Gore,3.52,0,1
+2025-04-01,Minnesota Twins,1-4,8.0,Chicago White Sox,2-3,3.0,0.0,0.0,0,Minnesota Twins,Chicago White Sox,P. Lopez (R),R,S. Burke (R),R,1.0,0.0,S. Burke,7.56,P. Lopez,1.62,1,1
+2025-04-01,Texas Rangers,4-2,1.0,Cincinnati Reds,2-3,0.0,1.0,0.0,1,Texas Rangers,Cincinnati Reds,J. Leiter (R),R,H. Greene (R),R,0.0,0.0,H. Greene,0.98,J. Leiter,0.9,1,1
+2025-04-01,San Francisco Giants,4-1,3.0,Houston Astros,2-3,1.0,0.0,0.0,0,San Francisco Giants,Houston Astros,L. Roupp (R),R,F. Valdez (L),L,2.0,0.0,F. Valdez,4.91,L. Roupp,4.8,1,0
+2025-04-01,Atlanta Braves,0-6,1.0,Los Angeles Dodgers,7-0,3.0,0.0,0.0,0,Atlanta Braves,Los Angeles Dodgers,B. Elder (R),R,B. Snell (L),L,2.0,0.0,B. Snell,2.0,B. Elder,7.2,1,0
+2025-04-01,New York Mets,2-3,2.0,Miami Marlins,4-2,4.0,0.0,2.0,1,New York Mets,Miami Marlins,C. Holmes (R),R,C. Gillispie (R),R,1.0,0.0,C. Gillispie,6.63,C. Holmes,3.66,1,1
+2025-04-01,Kansas City Royals,2-3,0.0,Milwaukee Brewers,1-4,5.0,0.0,0.0,0,Kansas City Royals,Milwaukee Brewers,C. Ragans (L),L,F. Peralta (R),R,0.0,1.0,F. Peralta,1.91,C. Ragans,3.58,1,0
+2025-04-01,Arizona Diamondbacks,3-2,7.0,New York Yankees,3-1,5.0,0.0,0.0,0,Arizona Diamondbacks,New York Yankees,M. Kelly (R),R,C. Carrasco (R),R,0.0,4.0,C. Carrasco,5.94,M. Kelly,5.57,1,1
+2025-04-01,Cleveland Guardians,2-3,0.0,San Diego Padres,6-0,7.0,0.0,0.0,0,Cleveland Guardians,San Diego Padres,B. Lively (R),R,D. Cease (R),R,0.0,0.0,D. Cease,6.64,B. Lively,4.87,1,1
+2025-04-01,Detroit Tigers,2-3,4.0,Seattle Mariners,2-4,1.0,2.0,0.0,1,Detroit Tigers,Seattle Mariners,T. Skubal (L),L,L. Castillo (R),R,0.0,0.0,L. Castillo,4.22,T. Skubal,2.66,1,0
+2025-04-01,Los Angeles Angels,4-1,9.0,St. Louis Cardinals,3-2,7.0,0.0,0.0,0,Los Angeles Angels,St. Louis Cardinals,Y. Kikuchi (L),L,S. Gray (R),R,1.0,0.0,S. Gray,3.13,Y. Kikuchi,4.13,1,0
+2025-04-01,Pittsburgh Pirates,1-5,0.0,Tampa Bay Rays,4-1,7.0,0.0,3.0,1,Pittsburgh Pirates,Tampa Bay Rays,P. Skenes (R),R,R. Pepiot (R),R,0.0,0.0,R. Pepiot,4.91,P. Skenes,2.96,1,1
+2025-04-01,Washington Nationals,1-4,3.0,Toronto Blue Jays,4-2,5.0,0.0,0.0,0,Washington Nationals,Toronto Blue Jays,M. Gore (L),L,E. Lucas (L),L,0.0,1.0,E. Lucas,4.7,M. Gore,3.52,1,1
+2025-04-02,Boston Red Sox,2-4,3.0,Baltimore Orioles,3-3,0.0,0.0,0.0,0,Boston Red Sox,Baltimore Orioles,T. Houck (R),R,C. Morton (R),R,2.0,1.0,C. Morton,8.84,T. Houck,9.16,2,1
+2025-04-02,Minnesota Twins,2-4,6.0,Chicago White Sox,2-4,1.0,1.0,0.0,1,Minnesota Twins,Chicago White Sox,P. Lopez (R),R,S. Burke (R),R,1.0,0.0,S. Burke,7.56,P. Lopez,1.62,2,1
+2025-04-02,Texas Rangers,5-2,1.0,Cincinnati Reds,2-4,0.0,0.0,0.0,0,Texas Rangers,Cincinnati Reds,J. Leiter (R),R,H. Greene (R),R,0.0,0.0,H. Greene,0.98,J. Leiter,0.9,2,1
+2025-04-02,San Francisco Giants,5-1,6.0,Houston Astros,2-4,3.0,2.0,0.0,1,San Francisco Giants,Houston Astros,L. Roupp (R),R,F. Valdez (L),L,2.0,0.0,F. Valdez,4.91,L. Roupp,4.8,2,0
+2025-04-02,Atlanta Braves,0-7,5.0,Los Angeles Dodgers,8-0,6.0,2.0,0.0,1,Atlanta Braves,Los Angeles Dodgers,B. Elder (R),R,B. Snell (L),L,2.0,0.0,B. Snell,2.0,B. Elder,7.2,2,0
+2025-04-02,New York Mets,3-3,6.0,Miami Marlins,4-3,5.0,1.0,0.0,1,New York Mets,Miami Marlins,C. Holmes (R),R,C. Gillispie (R),R,1.0,0.0,C. Gillispie,6.63,C. Holmes,3.66,2,1
+2025-04-02,Kansas City Royals,2-4,2.0,Milwaukee Brewers,2-4,3.0,0.0,1.0,1,Kansas City Royals,Milwaukee Brewers,C. Ragans (L),L,F. Peralta (R),R,0.0,1.0,F. Peralta,1.91,C. Ragans,3.58,2,0
+2025-04-02,Arizona Diamondbacks,4-2,4.0,New York Yankees,3-2,3.0,2.0,0.0,1,Arizona Diamondbacks,New York Yankees,M. Kelly (R),R,C. Carrasco (R),R,0.0,4.0,C. Carrasco,5.94,M. Kelly,5.57,2,1
+2025-04-02,Colorado Rockies,1-4,1.0,Philadelphia Phillies,4-1,5.0,0.0,0.0,0,Colorado Rockies,Philadelphia Phillies,A. Senzatela (R),R,T. Walker (R),R,0.0,0.0,T. Walker,2.3,A. Senzatela,5.89,2,1
+2025-04-02,Cleveland Guardians,2-4,2.0,San Diego Padres,7-0,5.0,0.0,0.0,0,Cleveland Guardians,San Diego Padres,B. Lively (R),R,D. Cease (R),R,0.0,0.0,D. Cease,6.64,B. Lively,4.87,2,1
+2025-04-02,Detroit Tigers,2-4,2.0,Seattle Mariners,3-4,3.0,0.0,0.0,0,Detroit Tigers,Seattle Mariners,T. Skubal (L),L,L. Castillo (R),R,0.0,0.0,L. Castillo,4.22,T. Skubal,2.66,2,0
+2025-04-02,Los Angeles Angels,4-2,5.0,St. Louis Cardinals,4-2,12.0,1.0,0.0,1,Los Angeles Angels,St. Louis Cardinals,Y. Kikuchi (L),L,S. Gray (R),R,1.0,0.0,S. Gray,3.13,Y. Kikuchi,4.13,2,0
+2025-04-02,Pittsburgh Pirates,2-5,4.0,Tampa Bay Rays,4-2,2.0,0.0,0.0,0,Pittsburgh Pirates,Tampa Bay Rays,P. Skenes (R),R,R. Pepiot (R),R,0.0,0.0,R. Pepiot,4.91,P. Skenes,2.96,2,1
+2025-04-02,Washington Nationals,1-5,2.0,Toronto Blue Jays,5-2,4.0,0.0,1.0,1,Washington Nationals,Toronto Blue Jays,M. Gore (L),L,E. Lucas (L),L,0.0,1.0,E. Lucas,4.7,M. Gore,3.52,2,1
+2025-04-03,Boston Red Sox,3-4,8.0,Baltimore Orioles,3-4,4.0,2.0,1.0,1,Boston Red Sox,Baltimore Orioles,T. Houck (R),R,C. Morton (R),R,2.0,1.0,C. Morton,8.84,T. Houck,9.16,3,1
+2025-04-03,Cincinnati Reds,2-5,0.0,Milwaukee Brewers,3-4,1.0,0.0,0.0,0,Cincinnati Reds,Milwaukee Brewers,C. Spiers (R),R,C. Patrick (R),R,0.0,0.0,C. Patrick,1.76,C. Spiers,4.82,3,1
+2025-04-03,Houston Astros,3-4,5.0,Minnesota Twins,2-5,2.0,0.0,2.0,1,Houston Astros,Minnesota Twins,R. Blanco (R),R,C. Paddack (R),R,1.0,3.0,C. Paddack,7.27,R. Blanco,6.48,3,1
+2025-04-03,Arizona Diamondbacks,4-3,7.0,New York Yankees,4-2,9.0,0.0,4.0,1,Arizona Diamondbacks,New York Yankees,M. Kelly (R),R,C. Carrasco (R),R,0.0,4.0,C. Carrasco,5.94,M. Kelly,5.57,3,1
+2025-04-03,Colorado Rockies,1-5,1.0,Philadelphia Phillies,5-1,3.0,0.0,0.0,0,Colorado Rockies,Philadelphia Phillies,A. Senzatela (R),R,T. Walker (R),R,0.0,0.0,T. Walker,2.3,A. Senzatela,5.89,3,1
+2025-04-04,Miami Marlins,4-4,0.0,Atlanta Braves,1-7,10.0,0.0,0.0,0,Miami Marlins,Atlanta Braves,C. Quantrill (R),R,A. Smith-Shawver (R),R,2.0,0.0,A. Smith-Shawver,4.61,C. Quantrill,5.79,4,1
+2025-04-04,St. Louis Cardinals,4-3,9.0,Boston Red Sox,4-4,13.0,0.0,5.0,1,St. Louis Cardinals,Boston Red Sox,A. Pallante (R),R,S. Newcomb (L),L,0.0,0.0,S. Newcomb,3.63,A. Pallante,3.22,4,0
+2025-04-04,San Diego Padres,7-1,1.0,Chicago Cubs,6-4,3.0,0.0,1.0,1,San Diego Padres,Chicago Cubs,K. Hart (L),L,B. Brown (R),R,3.0,5.0,B. Brown,5.09,K. Hart,6.48,4,0
+2025-04-04,Chicago White Sox,2-5,4.0,Detroit Tigers,3-4,7.0,0.0,1.0,1,Chicago White Sox,Detroit Tigers,M. Perez (L),L,J. Jobe (R),R,2.0,0.0,J. Jobe,2.7,M. Perez,3.15,4,0
+2025-04-04,Baltimore Orioles,3-5,2.0,Kansas City Royals,3-4,8.0,0.0,1.0,1,Baltimore Orioles,Kansas City Royals,C. Povich (L),L,K. Bubic (L),L,0.0,3.0,K. Bubic,1.88,C. Povich,6.38,4,1
+2025-04-04,Cleveland Guardians,3-4,8.0,Los Angeles Angels,4-3,6.0,1.0,1.0,1,Cleveland Guardians,Los Angeles Angels,L. Ortiz (R),R,T. Anderson (L),L,1.0,0.0,T. Anderson,2.08,L. Ortiz,5.48,4,0
+2025-04-04,Cincinnati Reds,2-6,2.0,Milwaukee Brewers,4-4,3.0,0.0,0.0,0,Cincinnati Reds,Milwaukee Brewers,C. Spiers (R),R,C. Patrick (R),R,0.0,0.0,C. Patrick,1.76,C. Spiers,4.82,4,1
+2025-04-04,Toronto Blue Jays,5-3,0.0,New York Mets,4-3,5.0,0.0,2.0,1,Toronto Blue Jays,New York Mets,B. Francis (R),R,D. Peterson (L),L,0.0,0.0,D. Peterson,3.27,B. Francis,3.13,4,0
+2025-04-04,Los Angeles Dodgers,8-1,2.0,Philadelphia Phillies,6-1,3.0,0.0,1.0,1,Los Angeles Dodgers,Philadelphia Phillies,T. Glasnow (R),R,C. Sanchez (L),L,2.0,0.0,C. Sanchez,2.96,T. Glasnow,4.85,4,0
+2025-04-04,New York Yankees,5-2,9.0,Pittsburgh Pirates,2-6,4.0,0.0,0.0,0,New York Yankees,Pittsburgh Pirates,W. Warren (R),R,A. Heaney (L),L,1.0,0.0,A. Heaney,2.13,W. Warren,5.17,4,0
+2025-04-04,Seattle Mariners,3-5,9.0,San Francisco Giants,6-1,10.0,1.0,1.0,1,Seattle Mariners,San Francisco Giants,B. Woo (R),R,J. Hicks (R),R,1.0,0.0,J. Hicks,6.04,B. Woo,3.12,4,1
+2025-04-04,Tampa Bay Rays,4-3,2.0,Texas Rangers,6-2,5.0,0.0,0.0,0,Tampa Bay Rays,Texas Rangers,D. Rasmussen (R),R,K. Rocker (R),R,0.0,0.0,K. Rocker,6.38,D. Rasmussen,0.87,4,1
+2025-04-04,Arizona Diamondbacks,5-3,6.0,Washington Nationals,1-6,4.0,1.0,3.0,1,Arizona Diamondbacks,Washington Nationals,C. Burnes (R),R,T. Williams (R),R,1.0,2.0,T. Williams,5.95,C. Burnes,4.64,4,1
+2025-04-05,Miami Marlins,5-4,4.0,Atlanta Braves,1-8,0.0,2.0,0.0,1,Miami Marlins,Atlanta Braves,C. Quantrill (R),R,A. Smith-Shawver (R),R,2.0,0.0,A. Smith-Shawver,4.61,C. Quantrill,5.79,5,1
+2025-04-05,St. Louis Cardinals,9-11,,Boston Red Sox,11-10,,0.0,0.0,0,St. Louis Cardinals,Boston Red Sox,A. Pallante (R),R,S. Newcomb (L),L,0.0,0.0,S. Newcomb,3.63,A. Pallante,3.22,5,0
+2025-04-05,San Diego Padres,7-2,1.0,Chicago Cubs,7-4,7.0,0.0,0.0,0,San Diego Padres,Chicago Cubs,K. Hart (L),L,B. Brown (R),R,3.0,5.0,B. Brown,5.09,K. Hart,6.48,5,0
+2025-04-05,Chicago White Sox,2-6,2.0,Detroit Tigers,4-4,7.0,1.0,2.0,1,Chicago White Sox,Detroit Tigers,M. Perez (L),L,J. Jobe (R),R,2.0,0.0,J. Jobe,2.7,M. Perez,3.15,5,0
+2025-04-05,Baltimore Orioles,4-5,8.0,Kansas City Royals,3-5,1.0,0.0,0.0,0,Baltimore Orioles,Kansas City Royals,C. Povich (L),L,K. Bubic (L),L,0.0,3.0,K. Bubic,1.88,C. Povich,6.38,5,1
+2025-04-05,Cleveland Guardians,3-5,4.0,Los Angeles Angels,5-3,10.0,1.0,3.0,1,Cleveland Guardians,Los Angeles Angels,L. Ortiz (R),R,T. Anderson (L),L,1.0,0.0,T. Anderson,2.08,L. Ortiz,5.48,5,0
+2025-04-05,Cincinnati Reds,3-6,11.0,Milwaukee Brewers,4-5,7.0,1.0,0.0,1,Cincinnati Reds,Milwaukee Brewers,C. Spiers (R),R,C. Patrick (R),R,0.0,0.0,C. Patrick,1.76,C. Spiers,4.82,5,1
+2025-04-05,Houston Astros,3-5,1.0,Minnesota Twins,3-5,6.0,1.0,0.0,1,Houston Astros,Minnesota Twins,R. Blanco (R),R,C. Paddack (R),R,1.0,3.0,C. Paddack,7.27,R. Blanco,6.48,5,1
+2025-04-05,Toronto Blue Jays,5-4,2.0,New York Mets,5-3,3.0,0.0,0.0,0,Toronto Blue Jays,New York Mets,B. Francis (R),R,D. Peterson (L),L,0.0,0.0,D. Peterson,3.27,B. Francis,3.13,5,0
+2025-04-05,Los Angeles Dodgers,9-1,3.0,Philadelphia Phillies,6-2,1.0,0.0,1.0,1,Los Angeles Dodgers,Philadelphia Phillies,T. Glasnow (R),R,C. Sanchez (L),L,2.0,0.0,C. Sanchez,2.96,T. Glasnow,4.85,5,0
+2025-04-05,New York Yankees,6-2,10.0,Pittsburgh Pirates,2-7,4.0,0.0,0.0,0,New York Yankees,Pittsburgh Pirates,W. Warren (R),R,A. Heaney (L),L,1.0,0.0,A. Heaney,2.13,W. Warren,5.17,5,0
+2025-04-05,Seattle Mariners,3-6,1.0,San Francisco Giants,7-1,4.0,0.0,0.0,0,Seattle Mariners,San Francisco Giants,B. Woo (R),R,J. Hicks (R),R,1.0,0.0,J. Hicks,6.04,B. Woo,3.12,5,1
+2025-04-05,Tampa Bay Rays,4-4,4.0,Texas Rangers,7-2,6.0,0.0,4.0,1,Tampa Bay Rays,Texas Rangers,D. Rasmussen (R),R,K. Rocker (R),R,0.0,0.0,K. Rocker,6.38,D. Rasmussen,0.87,5,1
+2025-04-05,Arizona Diamondbacks,5-4,3.0,Washington Nationals,2-6,4.0,0.0,3.0,1,Arizona Diamondbacks,Washington Nationals,C. Burnes (R),R,T. Williams (R),R,1.0,2.0,T. Williams,5.95,C. Burnes,4.64,5,1
+2025-04-06,Miami Marlins,8-11,,Atlanta Braves,6-13,,0.0,0.0,0,Miami Marlins,Atlanta Braves,C. Quantrill (R),R,A. Smith-Shawver (R),R,2.0,0.0,A. Smith-Shawver,4.61,C. Quantrill,5.79,6,1
+2025-04-06,St. Louis Cardinals,4-4,4.0,Boston Red Sox,5-4,5.0,0.0,0.0,0,St. Louis Cardinals,Boston Red Sox,A. Pallante (R),R,S. Newcomb (L),L,0.0,0.0,S. Newcomb,3.63,A. Pallante,3.22,6,0
+2025-04-06,St. Louis Cardinals,4-5,7.0,Boston Red Sox,6-4,18.0,1.0,1.0,1,St. Louis Cardinals,Boston Red Sox,A. Pallante (R),R,S. Newcomb (L),L,0.0,0.0,S. Newcomb,3.63,A. Pallante,3.22,6,0
+2025-04-06,San Diego Padres,8-2,8.0,Chicago Cubs,7-5,7.0,3.0,5.0,1,San Diego Padres,Chicago Cubs,K. Hart (L),L,B. Brown (R),R,3.0,5.0,B. Brown,5.09,K. Hart,6.48,6,0
+2025-04-06,Chicago White Sox,2-7,3.0,Detroit Tigers,5-4,4.0,2.0,0.0,1,Chicago White Sox,Detroit Tigers,M. Perez (L),L,J. Jobe (R),R,2.0,0.0,J. Jobe,2.7,M. Perez,3.15,6,0
+2025-04-06,Baltimore Orioles,4-6,1.0,Kansas City Royals,4-5,4.0,0.0,3.0,1,Baltimore Orioles,Kansas City Royals,C. Povich (L),L,K. Bubic (L),L,0.0,3.0,K. Bubic,1.88,C. Povich,6.38,6,1
+2025-04-06,Cleveland Guardians,3-6,2.0,Los Angeles Angels,6-3,6.0,1.0,0.0,1,Cleveland Guardians,Los Angeles Angels,L. Ortiz (R),R,T. Anderson (L),L,1.0,0.0,T. Anderson,2.08,L. Ortiz,5.48,6,0
+2025-04-06,Cincinnati Reds,3-7,2.0,Milwaukee Brewers,5-5,8.0,0.0,0.0,0,Cincinnati Reds,Milwaukee Brewers,C. Spiers (R),R,C. Patrick (R),R,0.0,0.0,C. Patrick,1.76,C. Spiers,4.82,6,1
+2025-04-06,Houston Astros,4-5,9.0,Minnesota Twins,3-6,7.0,1.0,3.0,1,Houston Astros,Minnesota Twins,R. Blanco (R),R,C. Paddack (R),R,1.0,3.0,C. Paddack,7.27,R. Blanco,6.48,6,1
+2025-04-06,Toronto Blue Jays,5-5,1.0,New York Mets,6-3,2.0,0.0,0.0,0,Toronto Blue Jays,New York Mets,B. Francis (R),R,D. Peterson (L),L,0.0,0.0,D. Peterson,3.27,B. Francis,3.13,6,0
+2025-04-06,Los Angeles Dodgers,9-2,7.0,Philadelphia Phillies,7-2,8.0,2.0,0.0,1,Los Angeles Dodgers,Philadelphia Phillies,T. Glasnow (R),R,C. Sanchez (L),L,2.0,0.0,C. Sanchez,2.96,T. Glasnow,4.85,6,0
+2025-04-06,New York Yankees,6-3,4.0,Pittsburgh Pirates,3-7,5.0,1.0,0.0,1,New York Yankees,Pittsburgh Pirates,W. Warren (R),R,A. Heaney (L),L,1.0,0.0,A. Heaney,2.13,W. Warren,5.17,6,0
+2025-04-06,Seattle Mariners,3-7,4.0,San Francisco Giants,8-1,5.0,1.0,0.0,1,Seattle Mariners,San Francisco Giants,B. Woo (R),R,J. Hicks (R),R,1.0,0.0,J. Hicks,6.04,B. Woo,3.12,6,1
+2025-04-06,Tampa Bay Rays,4-5,3.0,Texas Rangers,8-2,4.0,0.0,0.0,0,Tampa Bay Rays,Texas Rangers,D. Rasmussen (R),R,K. Rocker (R),R,0.0,0.0,K. Rocker,6.38,D. Rasmussen,0.87,6,1
+2025-04-06,Arizona Diamondbacks,5-5,4.0,Washington Nationals,3-6,5.0,1.0,2.0,1,Arizona Diamondbacks,Washington Nationals,C. Burnes (R),R,T. Williams (R),R,1.0,2.0,T. Williams,5.95,C. Burnes,4.64,6,1
+2025-04-07,Baltimore Orioles,5-6,5.0,Arizona Diamondbacks,5-6,1.0,1.0,0.0,1,Baltimore Orioles,Arizona Diamondbacks,D. Kremer (R),R,B. Pfaadt (R),R,0.0,1.0,B. Pfaadt,3.04,D. Kremer,6.41,0,1
+2025-04-07,Toronto Blue Jays,6-5,6.0,Boston Red Sox,6-5,2.0,0.0,0.0,0,Toronto Blue Jays,Boston Red Sox,C. Bassitt (R),R,W. Buehler (R),R,0.0,0.0,W. Buehler,5.23,C. Bassitt,0.77,0,1
+2025-04-07,Texas Rangers,8-3,0.0,Chicago Cubs,8-5,7.0,0.0,0.0,0,Texas Rangers,Chicago Cubs,T. Mahle (R),R,S. Imanaga (L),L,1.0,0.0,S. Imanaga,2.22,T. Mahle,0.92,0,0
+2025-04-07,New York Yankees,6-4,2.0,Detroit Tigers,6-4,6.0,0.0,0.0,0,New York Yankees,Detroit Tigers,M. Fried (L),L,J. Flaherty (R),R,0.0,0.0,J. Flaherty,2.53,M. Fried,1.88,0,0
+2025-04-07,Minnesota Twins,3-7,2.0,Kansas City Royals,5-5,4.0,0.0,1.0,1,Minnesota Twins,Kansas City Royals,B. Ober (R),R,M. Wacha (R),R,0.0,1.0,M. Wacha,4.35,B. Ober,6.16,0,1
+2025-04-07,Miami Marlins,5-5,0.0,New York Mets,7-3,2.0,0.0,0.0,0,Miami Marlins,New York Mets,M. Meyer (R),R,T. Megill (R),R,0.0,0.0,T. Megill,1.4,M. Meyer,2.63,0,1
+2025-04-07,St. Louis Cardinals,4-6,4.0,Pittsburgh Pirates,4-7,8.0,0.0,1.0,1,St. Louis Cardinals,Pittsburgh Pirates,E. Fedde (R),R,M. Keller (R),R,0.0,0.0,M. Keller,4.3,E. Fedde,3.43,0,1
+2025-04-07,Cincinnati Reds,4-7,2.0,San Francisco Giants,8-2,0.0,0.0,0.0,0,Cincinnati Reds,San Francisco Giants,N. Martinez (R),R,J. Verlander (R),R,0.0,0.0,J. Verlander,6.75,N. Martinez,6.0,0,1
+2025-04-07,Houston Astros,4-6,3.0,Seattle Mariners,4-7,4.0,0.0,0.0,0,Houston Astros,Seattle Mariners,H. Brown (R),R,L. Castillo (R),R,0.0,0.0,L. Castillo,7.71,H. Brown,1.5,0,1
+2025-04-07,Los Angeles Dodgers,9-3,4.0,Washington Nationals,4-6,6.0,0.0,0.0,0,Los Angeles Dodgers,Washington Nationals,L. Knack (R),R,J. Irvin (R),R,4.0,3.0,J. Irvin,3.91,L. Knack,7.27,0,1
+2025-04-08,Baltimore Orioles,5-7,3.0,Arizona Diamondbacks,6-6,4.0,2.0,1.0,1,Baltimore Orioles,Arizona Diamondbacks,D. Kremer (R),R,B. Pfaadt (R),R,0.0,1.0,B. Pfaadt,3.04,D. Kremer,6.41,1,1
+2025-04-08,Philadelphia Phillies,7-3,5.0,Atlanta Braves,2-8,7.0,1.0,0.0,1,Philadelphia Phillies,Atlanta Braves,J. Luzardo (L),L,S. Schwellenbach (R),R,0.0,1.0,S. Schwellenbach,2.55,J. Luzardo,2.31,1,0
+2025-04-08,Toronto Blue Jays,7-5,6.0,Boston Red Sox,6-6,1.0,0.0,0.0,0,Toronto Blue Jays,Boston Red Sox,C. Bassitt (R),R,W. Buehler (R),R,0.0,0.0,W. Buehler,5.23,C. Bassitt,0.77,1,1
+2025-04-08,Texas Rangers,8-4,6.0,Chicago Cubs,9-5,10.0,0.0,0.0,0,Texas Rangers,Chicago Cubs,T. Mahle (R),R,S. Imanaga (L),L,1.0,0.0,S. Imanaga,2.22,T. Mahle,0.92,1,0
+2025-04-08,Chicago White Sox,2-8,0.0,Cleveland Guardians,4-6,1.0,0.0,0.0,0,Chicago White Sox,Cleveland Guardians,J. Cannon (R),R,G. Williams (R),R,1.0,2.0,G. Williams,4.58,J. Cannon,4.42,1,1
+2025-04-08,Milwaukee Brewers,6-5,7.0,Colorado Rockies,2-8,1.0,0.0,0.0,0,Milwaukee Brewers,Colorado Rockies,Q. Priester (R),R,R. Feltner (R),R,0.0,1.0,R. Feltner,4.82,Q. Priester,0.9,1,1
+2025-04-08,New York Yankees,6-5,0.0,Detroit Tigers,7-4,5.0,0.0,0.0,0,New York Yankees,Detroit Tigers,M. Fried (L),L,J. Flaherty (R),R,0.0,0.0,J. Flaherty,2.53,M. Fried,1.88,1,0
+2025-04-08,Minnesota Twins,3-8,1.0,Kansas City Royals,6-5,2.0,0.0,0.0,0,Minnesota Twins,Kansas City Royals,B. Ober (R),R,M. Wacha (R),R,0.0,1.0,M. Wacha,4.35,B. Ober,6.16,1,1
+2025-04-08,Miami Marlins,5-6,5.0,New York Mets,8-3,10.0,2.0,1.0,1,Miami Marlins,New York Mets,M. Meyer (R),R,T. Megill (R),R,0.0,0.0,T. Megill,1.4,M. Meyer,2.63,1,1
+2025-04-08,St. Louis Cardinals,5-6,5.0,Pittsburgh Pirates,4-8,3.0,0.0,0.0,0,St. Louis Cardinals,Pittsburgh Pirates,E. Fedde (R),R,M. Keller (R),R,0.0,0.0,M. Keller,4.3,E. Fedde,3.43,1,1
+2025-04-08,Cincinnati Reds,5-7,1.0,San Francisco Giants,8-3,0.0,0.0,0.0,0,Cincinnati Reds,San Francisco Giants,N. Martinez (R),R,J. Verlander (R),R,0.0,0.0,J. Verlander,6.75,N. Martinez,6.0,1,1
+2025-04-08,Houston Astros,5-6,2.0,Seattle Mariners,4-8,1.0,0.0,0.0,0,Houston Astros,Seattle Mariners,H. Brown (R),R,L. Castillo (R),R,0.0,0.0,L. Castillo,7.71,H. Brown,1.5,1,1
+2025-04-08,Los Angeles Angels,7-3,4.0,Tampa Bay Rays,4-6,3.0,0.0,0.0,0,Los Angeles Angels,Tampa Bay Rays,J. Soriano (R),R,Z. Littell (R),R,1.0,0.0,Z. Littell,5.48,J. Soriano,3.16,1,1
+2025-04-08,Los Angeles Dodgers,9-4,2.0,Washington Nationals,5-6,8.0,0.0,2.0,1,Los Angeles Dodgers,Washington Nationals,L. Knack (R),R,J. Irvin (R),R,4.0,3.0,J. Irvin,3.91,L. Knack,7.27,1,1
+2025-04-09,Baltimore Orioles,5-8,0.0,Arizona Diamondbacks,7-6,9.0,0.0,1.0,1,Baltimore Orioles,Arizona Diamondbacks,D. Kremer (R),R,B. Pfaadt (R),R,0.0,1.0,B. Pfaadt,3.04,D. Kremer,6.41,2,1
+2025-04-09,Philadelphia Phillies,8-3,4.0,Atlanta Braves,2-9,3.0,0.0,0.0,0,Philadelphia Phillies,Atlanta Braves,J. Luzardo (L),L,S. Schwellenbach (R),R,0.0,1.0,S. Schwellenbach,2.55,J. Luzardo,2.31,2,0
+2025-04-09,Toronto Blue Jays,8-5,2.0,Boston Red Sox,6-7,1.0,1.0,1.0,1,Toronto Blue Jays,Boston Red Sox,C. Bassitt (R),R,W. Buehler (R),R,0.0,0.0,W. Buehler,5.23,C. Bassitt,0.77,2,1
+2025-04-09,Texas Rangers,9-4,6.0,Chicago Cubs,9-6,2.0,1.0,0.0,1,Texas Rangers,Chicago Cubs,T. Mahle (R),R,S. Imanaga (L),L,1.0,0.0,S. Imanaga,2.22,T. Mahle,0.92,2,0
+2025-04-09,Chicago White Sox,2-9,2.0,Cleveland Guardians,5-6,3.0,1.0,2.0,1,Chicago White Sox,Cleveland Guardians,J. Cannon (R),R,G. Williams (R),R,1.0,2.0,G. Williams,4.58,J. Cannon,4.42,2,1
+2025-04-09,Milwaukee Brewers,7-5,17.0,Colorado Rockies,2-9,2.0,0.0,0.0,0,Milwaukee Brewers,Colorado Rockies,Q. Priester (R),R,R. Feltner (R),R,0.0,1.0,R. Feltner,4.82,Q. Priester,0.9,2,1
+2025-04-09,New York Yankees,7-5,4.0,Detroit Tigers,7-5,3.0,0.0,0.0,0,New York Yankees,Detroit Tigers,M. Fried (L),L,J. Flaherty (R),R,0.0,0.0,J. Flaherty,2.53,M. Fried,1.88,2,0
+2025-04-09,Minnesota Twins,4-8,4.0,Kansas City Royals,6-6,0.0,0.0,0.0,0,Minnesota Twins,Kansas City Royals,B. Ober (R),R,M. Wacha (R),R,0.0,1.0,M. Wacha,4.35,B. Ober,6.16,2,1
+2025-04-09,Miami Marlins,6-6,5.0,New York Mets,8-4,0.0,0.0,0.0,0,Miami Marlins,New York Mets,M. Meyer (R),R,T. Megill (R),R,0.0,0.0,T. Megill,1.4,M. Meyer,2.63,2,1
+2025-04-09,St. Louis Cardinals,5-7,1.0,Pittsburgh Pirates,5-8,2.0,0.0,0.0,0,St. Louis Cardinals,Pittsburgh Pirates,E. Fedde (R),R,M. Keller (R),R,0.0,0.0,M. Keller,4.3,E. Fedde,3.43,2,1
+2025-04-09,Cincinnati Reds,5-8,6.0,San Francisco Giants,9-3,8.0,0.0,0.0,0,Cincinnati Reds,San Francisco Giants,N. Martinez (R),R,J. Verlander (R),R,0.0,0.0,J. Verlander,6.75,N. Martinez,6.0,2,1
+2025-04-09,Houston Astros,5-7,6.0,Seattle Mariners,5-8,7.0,0.0,0.0,0,Houston Astros,Seattle Mariners,H. Brown (R),R,L. Castillo (R),R,0.0,0.0,L. Castillo,7.71,H. Brown,1.5,2,1
+2025-04-09,Los Angeles Angels,7-4,4.0,Tampa Bay Rays,5-6,5.0,0.0,4.0,1,Los Angeles Angels,Tampa Bay Rays,J. Soriano (R),R,Z. Littell (R),R,1.0,0.0,Z. Littell,5.48,J. Soriano,3.16,2,1
+2025-04-09,Los Angeles Dodgers,10-4,6.0,Washington Nationals,5-7,5.0,4.0,3.0,1,Los Angeles Dodgers,Washington Nationals,L. Knack (R),R,J. Irvin (R),R,4.0,3.0,J. Irvin,3.91,L. Knack,7.27,2,1
+2025-04-10,Philadelphia Phillies,8-4,2.0,Atlanta Braves,3-9,4.0,0.0,1.0,1,Philadelphia Phillies,Atlanta Braves,J. Luzardo (L),L,S. Schwellenbach (R),R,0.0,1.0,S. Schwellenbach,2.55,J. Luzardo,2.31,3,0
+2025-04-10,Toronto Blue Jays,8-6,3.0,Boston Red Sox,7-7,4.0,0.0,0.0,0,Toronto Blue Jays,Boston Red Sox,C. Bassitt (R),R,W. Buehler (R),R,0.0,0.0,W. Buehler,5.23,C. Bassitt,0.77,3,1
+2025-04-10,Chicago White Sox,2-10,1.0,Cleveland Guardians,6-6,6.0,1.0,2.0,1,Chicago White Sox,Cleveland Guardians,J. Cannon (R),R,G. Williams (R),R,1.0,2.0,G. Williams,4.58,J. Cannon,4.42,3,1
+2025-04-10,Milwaukee Brewers,7-6,2.0,Colorado Rockies,3-9,7.0,0.0,1.0,1,Milwaukee Brewers,Colorado Rockies,Q. Priester (R),R,R. Feltner (R),R,0.0,1.0,R. Feltner,4.82,Q. Priester,0.9,3,1
+2025-04-10,Minnesota Twins,4-9,2.0,Kansas City Royals,7-6,3.0,0.0,1.0,1,Minnesota Twins,Kansas City Royals,B. Ober (R),R,M. Wacha (R),R,0.0,1.0,M. Wacha,4.35,B. Ober,6.16,3,1
+2025-04-10,Los Angeles Angels,8-4,11.0,Tampa Bay Rays,5-7,1.0,1.0,0.0,1,Los Angeles Angels,Tampa Bay Rays,J. Soriano (R),R,Z. Littell (R),R,1.0,0.0,Z. Littell,5.48,J. Soriano,3.16,3,1
+2025-04-11,Milwaukee Brewers,8-6,7.0,Arizona Diamondbacks,7-7,0.0,0.0,0.0,0,Milwaukee Brewers,Arizona Diamondbacks,F. Peralta (R),R,Z. Gallen (R),R,2.0,0.0,Z. Gallen,4.64,F. Peralta,1.91,4,1
+2025-04-11,Toronto Blue Jays,12-8,,Baltimore Orioles,8-11,,0.0,0.0,0,Toronto Blue Jays,Baltimore Orioles,J. Berrios (R),R,C. Povich (L),L,0.0,1.0,C. Povich,6.38,J. Berrios,5.16,4,0
+2025-04-11,Boston Red Sox,7-8,1.0,Chicago White Sox,3-10,11.0,0.0,0.0,0,Boston Red Sox,Chicago White Sox,G. Crochet (L),L,S. Smith (R),R,0.0,0.0,S. Smith,2.04,G. Crochet,1.38,4,0
+2025-04-11,Pittsburgh Pirates,5-9,3.0,Cincinnati Reds,6-8,5.0,0.0,3.0,1,Pittsburgh Pirates,Cincinnati Reds,C. Mlodzinski (R),R,H. Greene (R),R,0.0,0.0,H. Greene,0.98,C. Mlodzinski,7.41,4,1
+2025-04-11,Kansas City Royals,7-7,0.0,Cleveland Guardians,7-6,7.0,0.0,0.0,0,Kansas City Royals,Cleveland Guardians,C. Ragans (L),L,B. Lively (R),R,0.0,0.0,B. Lively,4.87,C. Ragans,3.58,4,0
+2025-04-11,Los Angeles Angels,8-5,3.0,Houston Astros,6-7,14.0,0.0,0.0,0,Los Angeles Angels,Houston Astros,K. Hendricks (R),R,H. Wesneski (R),R,1.0,0.0,H. Wesneski,4.0,K. Hendricks,4.2,4,1
+2025-04-11,Chicago Cubs,9-7,0.0,Los Angeles Dodgers,11-4,3.0,0.0,0.0,0,Chicago Cubs,Los Angeles Dodgers,C. Rea (R),R,T. Glasnow (R),R,0.0,0.0,T. Glasnow,4.85,C. Rea,1.32,4,1
+2025-04-11,Washington Nationals,6-7,7.0,Miami Marlins,6-7,4.0,0.0,0.0,0,Washington Nationals,Miami Marlins,M. Gore (L),L,C. Quantrill (R),R,0.0,0.0,C. Quantrill,5.79,M. Gore,3.52,4,0
+2025-04-11,Detroit Tigers,8-5,7.0,Minnesota Twins,4-10,6.0,0.0,0.0,0,Detroit Tigers,Minnesota Twins,C. Mize (R),R,S. Woods Richardson (R),R,0.0,1.0,S. Woods Richardson,4.3,C. Mize,2.6,4,1
+2025-04-11,San Francisco Giants,10-3,9.0,New York Yankees,7-6,1.0,5.0,0.0,1,San Francisco Giants,New York Yankees,L. Webb (R),R,C. Rodon (L),L,0.0,1.0,C. Rodon,4.34,L. Webb,2.4,4,0
+2025-04-11,Colorado Rockies,3-10,0.0,San Diego Padres,11-3,8.0,0.0,0.0,0,Colorado Rockies,San Diego Padres,K. Freeland (L),L,M. King (R),R,0.0,4.0,M. King,2.42,K. Freeland,4.88,4,0
+2025-04-11,Texas Rangers,9-5,3.0,Seattle Mariners,6-8,5.0,0.0,1.0,1,Texas Rangers,Seattle Mariners,N. Eovaldi (R),R,L. Gilbert (R),R,0.0,2.0,L. Gilbert,2.38,N. Eovaldi,2.55,4,1
+2025-04-11,Philadelphia Phillies,8-5,0.0,St. Louis Cardinals,6-7,2.0,0.0,0.0,0,Philadelphia Phillies,St. Louis Cardinals,Z. Wheeler (R),R,M. Liberatore (L),L,0.0,0.0,M. Liberatore,3.93,Z. Wheeler,3.73,4,0
+2025-04-11,Atlanta Braves,3-10,3.0,Tampa Bay Rays,6-7,6.0,1.0,0.0,1,Atlanta Braves,Tampa Bay Rays,C. Sale (L),L,J. Boyle (R),R,0.0,2.0,J. Boyle,0.0,C. Sale,6.63,4,0
+2025-04-12,Milwaukee Brewers,8-7,4.0,Arizona Diamondbacks,8-7,5.0,0.0,0.0,0,Milwaukee Brewers,Arizona Diamondbacks,F. Peralta (R),R,Z. Gallen (R),R,2.0,0.0,Z. Gallen,4.64,F. Peralta,1.91,5,1
+2025-04-12,Toronto Blue Jays,8-7,4.0,Baltimore Orioles,6-8,5.0,1.0,0.0,1,Toronto Blue Jays,Baltimore Orioles,J. Berrios (R),R,C. Povich (L),L,0.0,1.0,C. Povich,6.38,J. Berrios,5.16,5,0
+2025-04-12,Boston Red Sox,7-9,2.0,Chicago White Sox,4-10,3.0,0.0,0.0,0,Boston Red Sox,Chicago White Sox,G. Crochet (L),L,S. Smith (R),R,0.0,0.0,S. Smith,2.04,G. Crochet,1.38,5,0
+2025-04-12,Pittsburgh Pirates,5-10,2.0,Cincinnati Reds,7-8,5.0,0.0,0.0,0,Pittsburgh Pirates,Cincinnati Reds,C. Mlodzinski (R),R,H. Greene (R),R,0.0,0.0,H. Greene,0.98,C. Mlodzinski,7.41,5,1
+2025-04-12,Kansas City Royals,7-8,3.0,Cleveland Guardians,8-6,6.0,0.0,0.0,0,Kansas City Royals,Cleveland Guardians,C. Ragans (L),L,B. Lively (R),R,0.0,0.0,B. Lively,4.87,C. Ragans,3.58,5,0
+2025-04-12,Los Angeles Angels,9-5,4.0,Houston Astros,6-8,1.0,2.0,0.0,1,Los Angeles Angels,Houston Astros,K. Hendricks (R),R,H. Wesneski (R),R,1.0,0.0,H. Wesneski,4.0,K. Hendricks,4.2,5,1
+2025-04-12,Chicago Cubs,10-7,16.0,Los Angeles Dodgers,11-5,0.0,0.0,0.0,0,Chicago Cubs,Los Angeles Dodgers,C. Rea (R),R,T. Glasnow (R),R,0.0,0.0,T. Glasnow,4.85,C. Rea,1.32,5,1
+2025-04-12,Washington Nationals,6-8,6.0,Miami Marlins,7-7,7.0,0.0,0.0,0,Washington Nationals,Miami Marlins,M. Gore (L),L,C. Quantrill (R),R,0.0,0.0,C. Quantrill,5.79,M. Gore,3.52,5,0
+2025-04-12,Detroit Tigers,9-5,4.0,Minnesota Twins,4-11,0.0,1.0,0.0,1,Detroit Tigers,Minnesota Twins,C. Mize (R),R,S. Woods Richardson (R),R,0.0,1.0,S. Woods Richardson,4.3,C. Mize,2.6,5,1
+2025-04-12,San Francisco Giants,10-4,4.0,New York Yankees,8-6,8.0,0.0,2.0,1,San Francisco Giants,New York Yankees,L. Webb (R),R,C. Rodon (L),L,0.0,1.0,C. Rodon,4.34,L. Webb,2.4,5,0
+2025-04-12,Colorado Rockies,3-11,0.0,San Diego Padres,12-3,2.0,0.0,1.0,1,Colorado Rockies,San Diego Padres,K. Freeland (L),L,M. King (R),R,0.0,4.0,M. King,2.42,K. Freeland,4.88,5,0
+2025-04-12,Texas Rangers,9-6,2.0,Seattle Mariners,7-8,9.0,1.0,0.0,1,Texas Rangers,Seattle Mariners,N. Eovaldi (R),R,L. Gilbert (R),R,0.0,2.0,L. Gilbert,2.38,N. Eovaldi,2.55,5,1
+2025-04-12,Philadelphia Phillies,9-5,4.0,St. Louis Cardinals,6-8,1.0,2.0,0.0,1,Philadelphia Phillies,St. Louis Cardinals,Z. Wheeler (R),R,M. Liberatore (L),L,0.0,0.0,M. Liberatore,3.93,Z. Wheeler,3.73,5,0
+2025-04-12,Atlanta Braves,4-10,5.0,Tampa Bay Rays,6-8,4.0,0.0,1.0,1,Atlanta Braves,Tampa Bay Rays,C. Sale (L),L,J. Boyle (R),R,0.0,2.0,J. Boyle,0.0,C. Sale,6.63,5,0
+2025-04-13,Milwaukee Brewers,8-8,2.0,Arizona Diamondbacks,9-7,5.0,2.0,0.0,1,Milwaukee Brewers,Arizona Diamondbacks,F. Peralta (R),R,Z. Gallen (R),R,2.0,0.0,Z. Gallen,4.64,F. Peralta,1.91,6,1
+2025-04-13,Toronto Blue Jays,9-7,7.0,Baltimore Orioles,6-9,6.0,0.0,1.0,1,Toronto Blue Jays,Baltimore Orioles,J. Berrios (R),R,C. Povich (L),L,0.0,1.0,C. Povich,6.38,J. Berrios,5.16,6,0
+2025-04-13,Boston Red Sox,8-9,3.0,Chicago White Sox,4-11,1.0,0.0,0.0,0,Boston Red Sox,Chicago White Sox,G. Crochet (L),L,S. Smith (R),R,0.0,0.0,S. Smith,2.04,G. Crochet,1.38,6,0
+2025-04-13,Pittsburgh Pirates,5-11,0.0,Cincinnati Reds,8-8,4.0,0.0,0.0,0,Pittsburgh Pirates,Cincinnati Reds,C. Mlodzinski (R),R,H. Greene (R),R,0.0,0.0,H. Greene,0.98,C. Mlodzinski,7.41,6,1
+2025-04-13,Kansas City Royals,8-8,4.0,Cleveland Guardians,8-7,2.0,0.0,0.0,0,Kansas City Royals,Cleveland Guardians,C. Ragans (L),L,B. Lively (R),R,0.0,0.0,B. Lively,4.87,C. Ragans,3.58,6,0
+2025-04-13,Los Angeles Angels,9-6,3.0,Houston Astros,7-8,7.0,1.0,0.0,1,Los Angeles Angels,Houston Astros,K. Hendricks (R),R,H. Wesneski (R),R,1.0,0.0,H. Wesneski,4.0,K. Hendricks,4.2,6,1
+2025-04-13,Chicago Cubs,11-7,4.0,Los Angeles Dodgers,11-6,2.0,0.0,0.0,0,Chicago Cubs,Los Angeles Dodgers,C. Rea (R),R,T. Glasnow (R),R,0.0,0.0,T. Glasnow,4.85,C. Rea,1.32,6,1
+2025-04-13,Washington Nationals,6-9,4.0,Miami Marlins,8-7,11.0,0.0,0.0,0,Washington Nationals,Miami Marlins,M. Gore (L),L,C. Quantrill (R),R,0.0,0.0,C. Quantrill,5.79,M. Gore,3.52,6,0
+2025-04-13,Detroit Tigers,9-6,1.0,Minnesota Twins,5-11,5.0,0.0,1.0,1,Detroit Tigers,Minnesota Twins,C. Mize (R),R,S. Woods Richardson (R),R,0.0,1.0,S. Woods Richardson,4.3,C. Mize,2.6,6,1
+2025-04-13,San Francisco Giants,11-4,5.0,New York Yankees,8-7,4.0,0.0,1.0,1,San Francisco Giants,New York Yankees,L. Webb (R),R,C. Rodon (L),L,0.0,1.0,C. Rodon,4.34,L. Webb,2.4,6,0
+2025-04-13,Colorado Rockies,3-12,0.0,San Diego Padres,13-3,6.0,0.0,4.0,1,Colorado Rockies,San Diego Padres,K. Freeland (L),L,M. King (R),R,0.0,4.0,M. King,2.42,K. Freeland,4.88,6,0
+2025-04-13,Texas Rangers,9-7,1.0,Seattle Mariners,8-8,3.0,0.0,2.0,1,Texas Rangers,Seattle Mariners,N. Eovaldi (R),R,L. Gilbert (R),R,0.0,2.0,L. Gilbert,2.38,N. Eovaldi,2.55,6,1
+2025-04-13,Philadelphia Phillies,9-6,0.0,St. Louis Cardinals,7-8,7.0,0.0,0.0,0,Philadelphia Phillies,St. Louis Cardinals,Z. Wheeler (R),R,M. Liberatore (L),L,0.0,0.0,M. Liberatore,3.93,Z. Wheeler,3.73,6,0
+2025-04-13,Atlanta Braves,4-11,3.0,Tampa Bay Rays,7-8,8.0,0.0,2.0,1,Atlanta Braves,Tampa Bay Rays,C. Sale (L),L,J. Boyle (R),R,0.0,2.0,J. Boyle,0.0,C. Sale,6.63,6,0
+2025-04-14,Colorado Rockies,3-13,3.0,Los Angeles Dodgers,12-6,5.0,0.0,2.0,1,Colorado Rockies,Los Angeles Dodgers,G. Marquez (R),R,B. Miller (R),R,1.0,7.0,B. Miller,18.0,G. Marquez,8.27,0,1
+2025-04-14,Detroit Tigers,10-6,9.0,Milwaukee Brewers,8-9,1.0,2.0,0.0,1,Detroit Tigers,Milwaukee Brewers,K. Montero (R),R,J. Quintana (L),L,0.0,0.0,J. Quintana,0.71,K. Montero,9.0,0,0
+2025-04-14,New York Mets,11-5,5.0,Minnesota Twins,5-12,1.0,0.0,0.0,0,New York Mets,Minnesota Twins,H. Brazoban (R),R,D. Festa (R),R,0.0,0.0,D. Festa,0.0,H. Brazoban,1.35,0,1
+2025-04-14,Kansas City Royals,8-9,1.0,New York Yankees,9-7,4.0,0.0,0.0,0,Kansas City Royals,New York Yankees,K. Bubic (L),L,C. Schmidt (R),R,1.0,0.0,C. Schmidt,4.76,K. Bubic,1.88,0,0
+2025-04-14,San Francisco Giants,12-4,10.0,Philadelphia Phillies,9-7,4.0,0.0,3.0,1,San Francisco Giants,Philadelphia Phillies,J. Hicks (R),R,C. Sanchez (L),L,1.0,5.0,C. Sanchez,2.96,J. Hicks,6.04,0,0
+2025-04-14,Washington Nationals,6-10,3.0,Pittsburgh Pirates,6-11,10.0,0.0,1.0,1,Washington Nationals,Pittsburgh Pirates,T. Williams (R),R,A. Heaney (L),L,0.0,1.0,A. Heaney,2.13,T. Williams,5.95,0,0
+2025-04-14,Chicago Cubs,11-8,4.0,San Diego Padres,14-3,10.0,0.0,0.0,0,Chicago Cubs,San Diego Padres,M. Boyd (L),L,N. Pivetta (R),R,0.0,0.0,N. Pivetta,1.57,M. Boyd,2.01,0,0
+2025-04-14,Houston Astros,7-9,3.0,St. Louis Cardinals,8-8,8.0,0.0,0.0,0,Houston Astros,St. Louis Cardinals,R. Blanco (R),R,S. Matz (L),L,1.0,0.0,S. Matz,2.16,R. Blanco,6.48,0,0
+2025-04-14,Boston Red Sox,8-10,1.0,Tampa Bay Rays,8-8,16.0,0.0,1.0,1,Boston Red Sox,Tampa Bay Rays,S. Newcomb (L),L,Z. Littell (R),R,0.0,0.0,Z. Littell,5.48,S. Newcomb,3.63,0,0
+2025-04-14,Atlanta Braves,5-11,8.0,Toronto Blue Jays,9-8,4.0,2.0,0.0,1,Atlanta Braves,Toronto Blue Jays,S. Strider (R),R,C. Bassitt (R),R,0.0,0.0,C. Bassitt,0.77,S. Strider,3.6,0,1
+2025-04-15,Cleveland Guardians,9-7,6.0,Baltimore Orioles,6-10,3.0,0.0,0.0,0,Cleveland Guardians,Baltimore Orioles,T. Bibee (R),R,T. Sugano (R),R,0.0,1.0,T. Sugano,3.43,T. Bibee,5.85,1,1
+2025-04-15,Seattle Mariners,8-9,4.0,Cincinnati Reds,9-8,8.0,1.0,0.0,1,Seattle Mariners,Cincinnati Reds,E. Hancock (R),R,B. Singer (R),R,0.0,2.0,B. Singer,3.38,E. Hancock,12.71,1,1
+2025-04-15,Colorado Rockies,3-14,2.0,Los Angeles Dodgers,13-6,6.0,0.0,0.0,0,Colorado Rockies,Los Angeles Dodgers,G. Marquez (R),R,B. Miller (R),R,1.0,7.0,B. Miller,18.0,G. Marquez,8.27,1,1
+2025-04-15,Arizona Diamondbacks,10-7,10.0,Miami Marlins,8-8,4.0,0.0,0.0,0,Arizona Diamondbacks,Miami Marlins,E. Rodriguez (L),L,E. Cabrera (R),R,2.0,1.0,E. Cabrera,6.52,E. Rodriguez,4.09,1,0
+2025-04-15,Detroit Tigers,10-7,0.0,Milwaukee Brewers,9-9,5.0,0.0,0.0,0,Detroit Tigers,Milwaukee Brewers,K. Montero (R),R,J. Quintana (L),L,0.0,0.0,J. Quintana,0.71,K. Montero,9.0,1,0
+2025-04-15,New York Mets,11-6,3.0,Minnesota Twins,6-12,6.0,1.0,0.0,1,New York Mets,Minnesota Twins,H. Brazoban (R),R,D. Festa (R),R,0.0,0.0,D. Festa,0.0,H. Brazoban,1.35,1,1
+2025-04-15,Kansas City Royals,8-10,2.0,New York Yankees,10-7,4.0,0.0,0.0,0,Kansas City Royals,New York Yankees,K. Bubic (L),L,C. Schmidt (R),R,1.0,0.0,C. Schmidt,4.76,K. Bubic,1.88,1,0
+2025-04-15,San Francisco Giants,12-5,4.0,Philadelphia Phillies,10-7,6.0,0.0,0.0,0,San Francisco Giants,Philadelphia Phillies,J. Hicks (R),R,C. Sanchez (L),L,1.0,5.0,C. Sanchez,2.96,J. Hicks,6.04,1,0
+2025-04-15,Washington Nationals,7-10,3.0,Pittsburgh Pirates,6-12,0.0,1.0,0.0,1,Washington Nationals,Pittsburgh Pirates,T. Williams (R),R,A. Heaney (L),L,0.0,1.0,A. Heaney,2.13,T. Williams,5.95,1,0
+2025-04-15,Chicago Cubs,12-8,2.0,San Diego Padres,14-4,1.0,0.0,0.0,0,Chicago Cubs,San Diego Padres,M. Boyd (L),L,N. Pivetta (R),R,0.0,0.0,N. Pivetta,1.57,M. Boyd,2.01,1,0
+2025-04-15,Houston Astros,8-9,2.0,St. Louis Cardinals,8-9,0.0,0.0,0.0,0,Houston Astros,St. Louis Cardinals,R. Blanco (R),R,S. Matz (L),L,1.0,0.0,S. Matz,2.16,R. Blanco,6.48,1,0
+2025-04-15,Boston Red Sox,9-10,7.0,Tampa Bay Rays,8-9,4.0,1.0,0.0,1,Boston Red Sox,Tampa Bay Rays,S. Newcomb (L),L,Z. Littell (R),R,0.0,0.0,Z. Littell,5.48,S. Newcomb,3.63,1,0
+2025-04-15,Los Angeles Angels,9-7,0.0,Texas Rangers,10-7,4.0,0.0,0.0,0,Los Angeles Angels,Texas Rangers,J. Kochanowicz (R),R,K. Rocker (R),R,1.0,1.0,K. Rocker,6.38,J. Kochanowicz,6.2,1,1
+2025-04-15,Atlanta Braves,5-12,3.0,Toronto Blue Jays,10-8,6.0,1.0,0.0,1,Atlanta Braves,Toronto Blue Jays,S. Strider (R),R,C. Bassitt (R),R,0.0,0.0,C. Bassitt,0.77,S. Strider,3.6,1,1
+2025-04-16,Cleveland Guardians,9-8,1.0,Baltimore Orioles,7-10,9.0,0.0,0.0,0,Cleveland Guardians,Baltimore Orioles,T. Bibee (R),R,T. Sugano (R),R,0.0,1.0,T. Sugano,3.43,T. Bibee,5.85,2,1
+2025-04-16,Seattle Mariners,9-9,5.0,Cincinnati Reds,9-9,3.0,1.0,0.0,1,Seattle Mariners,Cincinnati Reds,E. Hancock (R),R,B. Singer (R),R,0.0,2.0,B. Singer,3.38,E. Hancock,12.71,2,1
+2025-04-16,Colorado Rockies,3-15,7.0,Los Angeles Dodgers,14-6,8.0,1.0,7.0,1,Colorado Rockies,Los Angeles Dodgers,G. Marquez (R),R,B. Miller (R),R,1.0,7.0,B. Miller,18.0,G. Marquez,8.27,2,1
+2025-04-16,Arizona Diamondbacks,11-7,6.0,Miami Marlins,8-9,2.0,0.0,0.0,0,Arizona Diamondbacks,Miami Marlins,E. Rodriguez (L),L,E. Cabrera (R),R,2.0,1.0,E. Cabrera,6.52,E. Rodriguez,4.09,2,0
+2025-04-16,Detroit Tigers,10-8,1.0,Milwaukee Brewers,10-9,5.0,0.0,0.0,0,Detroit Tigers,Milwaukee Brewers,K. Montero (R),R,J. Quintana (L),L,0.0,0.0,J. Quintana,0.71,K. Montero,9.0,2,0
+2025-04-16,New York Mets,11-7,3.0,Minnesota Twins,7-12,4.0,0.0,0.0,0,New York Mets,Minnesota Twins,H. Brazoban (R),R,D. Festa (R),R,0.0,0.0,D. Festa,0.0,H. Brazoban,1.35,2,1
+2025-04-16,Kansas City Royals,8-11,3.0,New York Yankees,11-7,4.0,1.0,0.0,1,Kansas City Royals,New York Yankees,K. Bubic (L),L,C. Schmidt (R),R,1.0,0.0,C. Schmidt,4.76,K. Bubic,1.88,2,0
+2025-04-16,San Francisco Giants,13-5,11.0,Philadelphia Phillies,10-8,4.0,4.0,2.0,1,San Francisco Giants,Philadelphia Phillies,J. Hicks (R),R,C. Sanchez (L),L,1.0,5.0,C. Sanchez,2.96,J. Hicks,6.04,2,0
+2025-04-16,Washington Nationals,7-11,1.0,Pittsburgh Pirates,7-12,6.0,0.0,0.0,0,Washington Nationals,Pittsburgh Pirates,T. Williams (R),R,A. Heaney (L),L,0.0,1.0,A. Heaney,2.13,T. Williams,5.95,2,0
+2025-04-16,Chicago Cubs,12-9,2.0,San Diego Padres,15-4,4.0,0.0,0.0,0,Chicago Cubs,San Diego Padres,M. Boyd (L),L,N. Pivetta (R),R,0.0,0.0,N. Pivetta,1.57,M. Boyd,2.01,2,0
+2025-04-16,Houston Astros,8-10,1.0,St. Louis Cardinals,9-9,4.0,1.0,0.0,1,Houston Astros,St. Louis Cardinals,R. Blanco (R),R,S. Matz (L),L,1.0,0.0,S. Matz,2.16,R. Blanco,6.48,2,0
+2025-04-16,Boston Red Sox,10-10,1.0,Tampa Bay Rays,8-10,0.0,0.0,0.0,0,Boston Red Sox,Tampa Bay Rays,S. Newcomb (L),L,Z. Littell (R),R,0.0,0.0,Z. Littell,5.48,S. Newcomb,3.63,2,0
+2025-04-16,Los Angeles Angels,9-8,1.0,Texas Rangers,11-7,3.0,0.0,0.0,0,Los Angeles Angels,Texas Rangers,J. Kochanowicz (R),R,K. Rocker (R),R,1.0,1.0,K. Rocker,6.38,J. Kochanowicz,6.2,2,1
+2025-04-16,Atlanta Braves,5-13,1.0,Toronto Blue Jays,11-8,3.0,0.0,0.0,0,Atlanta Braves,Toronto Blue Jays,S. Strider (R),R,C. Bassitt (R),R,0.0,0.0,C. Bassitt,0.77,S. Strider,3.6,2,1
+2025-04-17,Cleveland Guardians,9-9,2.0,Baltimore Orioles,8-10,6.0,0.0,1.0,1,Cleveland Guardians,Baltimore Orioles,T. Bibee (R),R,T. Sugano (R),R,0.0,1.0,T. Sugano,3.43,T. Bibee,5.85,3,1
+2025-04-17,Seattle Mariners,10-9,11.0,Cincinnati Reds,9-10,7.0,0.0,2.0,1,Seattle Mariners,Cincinnati Reds,E. Hancock (R),R,B. Singer (R),R,0.0,2.0,B. Singer,3.38,E. Hancock,12.71,3,1
+2025-04-17,Kansas City Royals,8-12,1.0,Detroit Tigers,11-8,6.0,0.0,0.0,0,Kansas City Royals,Detroit Tigers,S. Lugo (R),R,C. Mize (R),R,0.0,0.0,C. Mize,2.6,S. Lugo,3.86,3,1
+2025-04-17,Arizona Diamondbacks,12-7,6.0,Miami Marlins,8-10,4.0,2.0,1.0,1,Arizona Diamondbacks,Miami Marlins,E. Rodriguez (L),L,E. Cabrera (R),R,2.0,1.0,E. Cabrera,6.52,E. Rodriguez,4.09,3,0
+2025-04-17,St. Louis Cardinals,9-10,1.0,New York Mets,12-7,4.0,0.0,0.0,0,St. Louis Cardinals,New York Mets,M. Liberatore (L),L,K. Senga (R),R,0.0,0.0,K. Senga,1.06,M. Liberatore,3.93,3,0
+2025-04-17,San Francisco Giants,13-6,4.0,Philadelphia Phillies,11-8,6.0,1.0,5.0,1,San Francisco Giants,Philadelphia Phillies,J. Hicks (R),R,C. Sanchez (L),L,1.0,5.0,C. Sanchez,2.96,J. Hicks,6.04,3,0
+2025-04-17,Washington Nationals,7-12,0.0,Pittsburgh Pirates,8-12,1.0,0.0,1.0,1,Washington Nationals,Pittsburgh Pirates,T. Williams (R),R,A. Heaney (L),L,0.0,1.0,A. Heaney,2.13,T. Williams,5.95,3,0
+2025-04-17,New York Yankees,12-7,6.0,Tampa Bay Rays,8-11,3.0,1.0,0.0,1,New York Yankees,Tampa Bay Rays,C. Carrasco (R),R,S. Baz (R),R,2.0,0.0,S. Baz,1.42,C. Carrasco,5.94,3,1
+2025-04-17,Los Angeles Angels,9-9,3.0,Texas Rangers,12-7,5.0,1.0,1.0,1,Los Angeles Angels,Texas Rangers,J. Kochanowicz (R),R,K. Rocker (R),R,1.0,1.0,K. Rocker,6.38,J. Kochanowicz,6.2,3,1
+2025-04-18,Minnesota Twins,7-13,4.0,Atlanta Braves,6-13,6.0,0.0,0.0,0,Minnesota Twins,Atlanta Braves,C. Paddack (R),R,B. Elder (R),R,0.0,0.0,B. Elder,7.2,C. Paddack,7.27,4,1
+2025-04-18,Cincinnati Reds,10-10,8.0,Baltimore Orioles,8-11,3.0,0.0,0.0,0,Cincinnati Reds,Baltimore Orioles,H. Greene (R),R,B. Young (R),R,1.0,2.0,B. Young,0.0,H. Greene,0.98,4,1
+2025-04-18,Chicago White Sox,4-15,3.0,Boston Red Sox,11-10,10.0,0.0,3.0,1,Chicago White Sox,Boston Red Sox,S. Smith (R),R,G. Crochet (L),L,0.0,0.0,G. Crochet,1.38,S. Smith,2.04,4,0
+2025-04-18,Arizona Diamondbacks,12-8,11.0,Chicago Cubs,13-9,13.0,0.0,0.0,0,Arizona Diamondbacks,Chicago Cubs,Z. Gallen (R),R,B. Brown (R),R,1.0,2.0,B. Brown,5.09,Z. Gallen,4.64,4,1
+2025-04-18,Washington Nationals,7-12,,Colorado Rockies,3-15,,0.0,0.0,0,Washington Nationals,Colorado Rockies,M. Gore (L),L,C. Dollander (R),R,0.0,0.0,C. Dollander,5.06,M. Gore,3.52,4,0
+2025-04-18,Kansas City Royals,8-13,3.0,Detroit Tigers,12-8,7.0,1.0,0.0,1,Kansas City Royals,Detroit Tigers,S. Lugo (R),R,C. Mize (R),R,0.0,0.0,C. Mize,2.6,S. Lugo,3.86,4,1
+2025-04-18,San Diego Padres,15-5,4.0,Houston Astros,9-10,6.0,0.0,0.0,0,San Diego Padres,Houston Astros,K. Hart (L),L,R. Gusto (R),R,0.0,0.0,R. Gusto,3.18,K. Hart,6.48,4,0
+2025-04-18,San Francisco Giants,13-7,0.0,Los Angeles Angels,10-9,2.0,0.0,0.0,0,San Francisco Giants,Los Angeles Angels,L. Webb (R),R,T. Anderson (L),L,0.0,0.0,T. Anderson,2.08,L. Webb,2.4,4,0
+2025-04-18,St. Louis Cardinals,9-11,4.0,New York Mets,13-7,5.0,0.0,0.0,0,St. Louis Cardinals,New York Mets,M. Liberatore (L),L,K. Senga (R),R,0.0,0.0,K. Senga,1.06,M. Liberatore,3.93,4,0
+2025-04-18,Miami Marlins,8-11,2.0,Philadelphia Phillies,12-8,7.0,0.0,2.0,1,Miami Marlins,Philadelphia Phillies,C. Quantrill (R),R,T. Walker (R),R,0.0,0.0,T. Walker,2.3,C. Quantrill,5.79,4,1
+2025-04-18,Cleveland Guardians,10-9,10.0,Pittsburgh Pirates,8-13,7.0,0.0,1.0,1,Cleveland Guardians,Pittsburgh Pirates,B. Lively (R),R,P. Skenes (R),R,0.0,0.0,P. Skenes,2.96,B. Lively,4.87,4,1
+2025-04-18,New York Yankees,13-7,1.0,Tampa Bay Rays,8-12,0.0,0.0,0.0,0,New York Yankees,Tampa Bay Rays,C. Carrasco (R),R,S. Baz (R),R,2.0,0.0,S. Baz,1.42,C. Carrasco,5.94,4,1
+2025-04-18,Los Angeles Dodgers,15-6,3.0,Texas Rangers,12-8,0.0,1.0,0.0,1,Los Angeles Dodgers,Texas Rangers,R. Sasaki (R),R,N. Eovaldi (R),R,0.0,0.0,N. Eovaldi,2.55,R. Sasaki,3.29,4,1
+2025-04-18,Seattle Mariners,10-10,1.0,Toronto Blue Jays,12-8,3.0,0.0,1.0,1,Seattle Mariners,Toronto Blue Jays,L. Gilbert (R),R,J. Berrios (R),R,0.0,1.0,J. Berrios,5.16,L. Gilbert,2.38,4,1
+2025-04-19,Minnesota Twins,7-14,3.0,Atlanta Braves,7-13,4.0,1.0,1.0,1,Minnesota Twins,Atlanta Braves,C. Paddack (R),R,B. Elder (R),R,0.0,0.0,B. Elder,7.2,C. Paddack,7.27,5,1
+2025-04-19,Cincinnati Reds,10-11,5.0,Baltimore Orioles,9-11,9.0,1.0,2.0,1,Cincinnati Reds,Baltimore Orioles,H. Greene (R),R,B. Young (R),R,1.0,2.0,B. Young,0.0,H. Greene,0.98,5,1
+2025-04-19,Chicago White Sox,4-16,3.0,Boston Red Sox,12-10,4.0,0.0,0.0,0,Chicago White Sox,Boston Red Sox,S. Smith (R),R,G. Crochet (L),L,0.0,0.0,G. Crochet,1.38,S. Smith,2.04,5,0
+2025-04-19,Arizona Diamondbacks,12-9,2.0,Chicago Cubs,14-9,6.0,1.0,2.0,1,Arizona Diamondbacks,Chicago Cubs,Z. Gallen (R),R,B. Brown (R),R,1.0,2.0,B. Brown,5.09,Z. Gallen,4.64,5,1
+2025-04-19,Washington Nationals,8-12,12.0,Colorado Rockies,3-16,11.0,0.0,0.0,0,Washington Nationals,Colorado Rockies,M. Gore (L),L,C. Dollander (R),R,0.0,0.0,C. Dollander,5.06,M. Gore,3.52,5,0
+2025-04-19,Kansas City Royals,8-14,1.0,Detroit Tigers,13-8,3.0,0.0,0.0,0,Kansas City Royals,Detroit Tigers,S. Lugo (R),R,C. Mize (R),R,0.0,0.0,C. Mize,2.6,S. Lugo,3.86,5,1
+2025-04-19,San Diego Padres,15-6,2.0,Houston Astros,10-10,3.0,0.0,0.0,0,San Diego Padres,Houston Astros,K. Hart (L),L,R. Gusto (R),R,0.0,0.0,R. Gusto,3.18,K. Hart,6.48,5,0
+2025-04-19,San Francisco Giants,14-7,3.0,Los Angeles Angels,10-10,2.0,2.0,0.0,1,San Francisco Giants,Los Angeles Angels,L. Webb (R),R,T. Anderson (L),L,0.0,0.0,T. Anderson,2.08,L. Webb,2.4,5,0
+2025-04-19,St. Louis Cardinals,9-12,0.0,New York Mets,14-7,3.0,0.0,0.0,0,St. Louis Cardinals,New York Mets,M. Liberatore (L),L,K. Senga (R),R,0.0,0.0,K. Senga,1.06,M. Liberatore,3.93,5,0
+2025-04-19,Miami Marlins,8-12,10.0,Philadelphia Phillies,13-8,11.0,0.0,0.0,0,Miami Marlins,Philadelphia Phillies,C. Quantrill (R),R,T. Walker (R),R,0.0,0.0,T. Walker,2.3,C. Quantrill,5.79,5,1
+2025-04-19,Cleveland Guardians,11-9,3.0,Pittsburgh Pirates,8-14,0.0,0.0,0.0,0,Cleveland Guardians,Pittsburgh Pirates,B. Lively (R),R,P. Skenes (R),R,0.0,0.0,P. Skenes,2.96,B. Lively,4.87,5,1
+2025-04-19,New York Yankees,13-8,8.0,Tampa Bay Rays,9-12,10.0,2.0,0.0,1,New York Yankees,Tampa Bay Rays,C. Carrasco (R),R,S. Baz (R),R,2.0,0.0,S. Baz,1.42,C. Carrasco,5.94,5,1
+2025-04-19,Los Angeles Dodgers,15-7,3.0,Texas Rangers,13-8,4.0,0.0,0.0,0,Los Angeles Dodgers,Texas Rangers,R. Sasaki (R),R,N. Eovaldi (R),R,0.0,0.0,N. Eovaldi,2.55,R. Sasaki,3.29,5,1
+2025-04-19,Seattle Mariners,11-10,8.0,Toronto Blue Jays,12-9,4.0,0.0,1.0,1,Seattle Mariners,Toronto Blue Jays,L. Gilbert (R),R,J. Berrios (R),R,0.0,1.0,J. Berrios,5.16,L. Gilbert,2.38,5,1
+2025-04-20,Minnesota Twins,7-14,,Atlanta Braves,7-13,,0.0,0.0,0,Minnesota Twins,Atlanta Braves,C. Paddack (R),R,B. Elder (R),R,0.0,0.0,B. Elder,7.2,C. Paddack,7.27,6,1
+2025-04-20,Cincinnati Reds,10-11,,Baltimore Orioles,9-11,,0.0,0.0,0,Cincinnati Reds,Baltimore Orioles,H. Greene (R),R,B. Young (R),R,1.0,2.0,B. Young,0.0,H. Greene,0.98,6,1
+2025-04-20,Chicago White Sox,4-16,,Boston Red Sox,12-10,,0.0,0.0,0,Chicago White Sox,Boston Red Sox,S. Smith (R),R,G. Crochet (L),L,0.0,0.0,G. Crochet,1.38,S. Smith,2.04,6,0
+2025-04-20,Arizona Diamondbacks,12-9,,Chicago Cubs,14-9,,0.0,0.0,0,Arizona Diamondbacks,Chicago Cubs,Z. Gallen (R),R,B. Brown (R),R,1.0,2.0,B. Brown,5.09,Z. Gallen,4.64,6,1
+2025-04-20,Washington Nationals,8-12,,Colorado Rockies,3-16,,0.0,0.0,0,Washington Nationals,Colorado Rockies,M. Gore (L),L,C. Dollander (R),R,0.0,0.0,C. Dollander,5.06,M. Gore,3.52,6,0
+2025-04-20,Washington Nationals,8-12,,Colorado Rockies,3-16,,0.0,0.0,0,Washington Nationals,Colorado Rockies,M. Gore (L),L,C. Dollander (R),R,0.0,0.0,C. Dollander,5.06,M. Gore,3.52,6,0
+2025-04-20,Kansas City Royals,8-14,,Detroit Tigers,13-8,,0.0,0.0,0,Kansas City Royals,Detroit Tigers,S. Lugo (R),R,C. Mize (R),R,0.0,0.0,C. Mize,2.6,S. Lugo,3.86,6,1
+2025-04-20,San Diego Padres,15-6,,Houston Astros,10-10,,0.0,0.0,0,San Diego Padres,Houston Astros,K. Hart (L),L,R. Gusto (R),R,0.0,0.0,R. Gusto,3.18,K. Hart,6.48,6,0
+2025-04-20,San Francisco Giants,14-7,,Los Angeles Angels,10-10,,0.0,0.0,0,San Francisco Giants,Los Angeles Angels,L. Webb (R),R,T. Anderson (L),L,0.0,0.0,T. Anderson,2.08,L. Webb,2.4,6,0
+2025-04-20,St. Louis Cardinals,9-12,,New York Mets,14-7,,0.0,0.0,0,St. Louis Cardinals,New York Mets,M. Liberatore (L),L,K. Senga (R),R,0.0,0.0,K. Senga,1.06,M. Liberatore,3.93,6,0
+2025-04-20,Miami Marlins,8-12,,Philadelphia Phillies,13-8,,0.0,0.0,0,Miami Marlins,Philadelphia Phillies,C. Quantrill (R),R,T. Walker (R),R,0.0,0.0,T. Walker,2.3,C. Quantrill,5.79,6,1
+2025-04-20,Cleveland Guardians,11-9,,Pittsburgh Pirates,8-14,,0.0,0.0,0,Cleveland Guardians,Pittsburgh Pirates,B. Lively (R),R,P. Skenes (R),R,0.0,0.0,P. Skenes,2.96,B. Lively,4.87,6,1
+2025-04-20,New York Yankees,13-8,,Tampa Bay Rays,9-12,,0.0,0.0,0,New York Yankees,Tampa Bay Rays,C. Carrasco (R),R,S. Baz (R),R,2.0,0.0,S. Baz,1.42,C. Carrasco,5.94,6,1
+2025-04-20,Los Angeles Dodgers,15-7,,Texas Rangers,13-8,,0.0,0.0,0,Los Angeles Dodgers,Texas Rangers,R. Sasaki (R),R,N. Eovaldi (R),R,0.0,0.0,N. Eovaldi,2.55,R. Sasaki,3.29,6,1
+2025-04-20,Seattle Mariners,11-10,,Toronto Blue Jays,12-9,,0.0,0.0,0,Seattle Mariners,Toronto Blue Jays,L. Gilbert (R),R,J. Berrios (R),R,0.0,1.0,J. Berrios,5.16,L. Gilbert,2.38,6,1
+2025-04-21,Chicago White Sox,4-16,,Boston Red Sox,12-10,,0.0,0.0,0,Chicago White Sox,Boston Red Sox,S. Smith (R),R,G. Crochet (L),L,0.0,0.0,G. Crochet,1.38,S. Smith,2.04,0,0
