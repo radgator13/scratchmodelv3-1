@@ -12,7 +12,8 @@ model = joblib.load(MODEL_DIR / "yrfi_xgb_model.pkl")
 encoder = joblib.load(MODEL_DIR / "yrfi_encoder.pkl")
 
 # Load today's matchups
-df = pd.read_csv(DATA_DIR / "today_matchups.csv", parse_dates=["date"])
+df = pd.read_csv(DATA_DIR / "today_matchups.csv", parse_dates=["Game Date"])
+
 
 # Create features
 df["day_of_week"] = df["date"].dt.dayofweek
