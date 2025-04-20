@@ -1,4 +1,4 @@
-date,away_team,home_team,away_starter,away_hand,home_starter,home_hand,Away 1st,Home 1st,yrfi,home_starter_clean,home_era,away_starter_clean,away_era,home_team_avg_1st,home_games,away_team_avg_1st,away_games,day_of_week,same_hand,YRFI_Prob,NRFI_Prob,YRFI🔥,NRFI🔥
+Game Date,away_team,home_team,away_starter,away_hand,home_starter,home_hand,Away 1st,Home 1st,yrfi,home_starter_clean,home_era,away_starter_clean,away_era,home_team_avg_1st,home_games,away_team_avg_1st,away_games,day_of_week,same_hand,YRFI_Prob,NRFI_Prob,YRFI🔥,NRFI🔥
 2025-03-27,Chicago Cubs,Arizona Diamondbacks,J. Steele (L),L,Z. Gallen (R),R,0.0,1.0,1,Z. Gallen,4.64,J. Steele,4.76,0.3,10,0.5384615384615384,13,3,0,0.58156496,0.41843504,🔥🔥🔥,🔥🔥🔥
 2025-03-27,Los Angeles Angels,Chicago White Sox,Y. Kikuchi (L),L,S. Burke (R),R,0.0,0.0,0,S. Burke,7.56,Y. Kikuchi,4.13,0.6666666666666666,12,0.5333333333333333,15,3,0,0.5082455,0.49175447,🔥🔥🔥,🔥🔥🔥
 2025-03-27,San Francisco Giants,Cincinnati Reds,L. Webb (R),R,H. Greene (R),R,0.0,1.0,1,H. Greene,0.98,L. Webb,2.4,0.75,12,0.8571428571428571,14,3,1,0.36519194,0.63480806,🔥🔥,🔥🔥🔥🔥
