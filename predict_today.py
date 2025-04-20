@@ -10,41 +10,37 @@ MODEL_DIR = Path("model")
 MODEL_PATH = MODEL_DIR / "yrfi_xgb_model.pkl"
 ENCODER_PATH = MODEL_DIR / "yrfi_encoder.pkl"
 
-# === Load data ===
-df = pd.read_csv(DATA_DIR / "today_matchups.csv", parse_dates=["Game Date"])
-df["day_of_week"] = df["Game Date"].dt.dayofweek
+# ✅ Use the same enriched dataset used during training
+df = pd.read_csv(DATA_DIR / "yrfi_model_input_with_era_and_team_rates.csv", parse_dates=["date"])
+df["day_of_week"] = df["date"].dt.dayofweek
 
-# === Optional: Build same_hand flag
+# === Build same_hand column
 if "away_hand" in df.columns and "home_hand" in df.columns:
     df["same_hand"] = (df["away_hand"] == df["home_hand"]).astype(int)
 else:
     df["same_hand"] = 0
 
-# === Define feature sets
+# === Define features used by the model
 categorical_cols = ["away_team", "home_team", "away_hand", "home_hand"]
 numeric_cols = [
     "home_era", "away_era", "home_team_avg_1st", "away_team_avg_1st",
     "day_of_week", "same_hand"
 ]
-
-# Drop any rows missing required columns
-required_cols = numeric_cols + categorical_cols
+required_cols = categorical_cols + numeric_cols
 df = df.dropna(subset=required_cols)
 
-# === One-hot encode categoricals
+# === Encode categoricals + stack features
 encoder = joblib.load(ENCODER_PATH)
 X_cat = encoder.transform(df[categorical_cols])
 X_num = df[numeric_cols].values
 X = np.hstack([X_cat, X_num])
 
-# === Load model
+# === Load model + predict
 model = joblib.load(MODEL_PATH)
-
-# === Predict
 df["YRFI_Prob"] = model.predict_proba(X)[:, 1]
 df["NRFI_Prob"] = 1 - df["YRFI_Prob"]
 
-# === Fireballs
+# === Add Fireball Confidence
 def to_fireballs(p):
     if p >= 0.80: return "🔥🔥🔥🔥🔥"
     elif p >= 0.60: return "🔥🔥🔥🔥"
@@ -55,7 +51,7 @@ def to_fireballs(p):
 df["YRFI🔥"] = df["YRFI_Prob"].apply(to_fireballs)
 df["NRFI🔥"] = df["NRFI_Prob"].apply(to_fireballs)
 
-# === Save output
+# === Save final output
 output_path = DATA_DIR / "yrfi_predictions_pregame_with_odds.csv"
 df.to_csv(output_path, index=False)
 print(f"✅ Saved predictions to {output_path}")
