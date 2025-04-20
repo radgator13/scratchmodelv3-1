@@ -1,0 +1,2 @@
+Total Games,Actual YRFI Rate,Model Accuracy,YRFI Precision,YRFI Recall,ROC AUC
+286,0.49,0.881,0.89,0.864,0.924

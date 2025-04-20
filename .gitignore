@@ -1,0 +1,75 @@
+﻿# ======================
+# 📦 Visual Studio
+# ======================
+.vs/
+*.user
+*.suo
+*.sln
+*.vcxproj*
+*.pyproj*
+
+# ======================
+# 🐍 Python artifacts
+# ======================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# ======================
+# 🔧 Environments
+# ======================
+env/
+venv/
+.venv/
+*.env
+*.env.*
+
+# ======================
+# 📊 Model artifacts
+# ======================
+*.pkl
+*.joblib
+models/*.pkl
+model/*.pkl
+
+# ======================
+# 🧼 Output files (optional logs, junk)
+# ======================
+*.bak
+.DS_Store
+Thumbs.db
+.ipynb_checkpoints/
+
+# ======================
+# 📈 Streamlit config
+# ======================
+.streamlit/credentials.toml
+.streamlit/config.toml
+
+# ======================
+# 📂 Data control
+# ======================
+# Ignore ALL CSVs by default...
+*.csv
+
+# ...except for the ones we care about tracking
+!data/yrfi_predictions_pregame.csv
+!data/yrfi_predictions_pregame_with_odds.csv
+!data/mlb_boxscores_cleaned.csv
+!data/yrfi_model_input.csv
+!data/yrfi_market_odds.csv
+!data/today_matchups.csv
+!data/.last_push.txt
+!data/yrfi_backtest_summary_through_apr19.csv
+!data/yrfi_backtest_results_through_apr19.csv
+!data/backtest_yrfi_predictions_mar27_to_apr20.csv
+!data/model_vs_inferred_yrfi_market.csv
+!data/rotowire-projstarters.csv
+
+# ======================
+# ✅ GitHub actions / automation (if needed)
+# ======================
+.github/
+*.yml
