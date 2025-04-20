@@ -67,6 +67,7 @@ Thumbs.db
 !data/backtest_yrfi_predictions_mar27_to_apr20.csv
 !data/model_vs_inferred_yrfi_market.csv
 !data/rotowire-projstarters.csv
+!data/yrfi_model_input_live_with_era.csv
 
 # ======================
 # ✅ GitHub actions / automation (if needed)
