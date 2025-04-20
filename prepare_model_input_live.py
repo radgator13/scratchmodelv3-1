@@ -3,46 +3,45 @@ from pathlib import Path
 
 DATA_DIR = Path("data")
 
-# === Load today's matchups (from Rotowire)
-matchups = pd.read_csv(DATA_DIR / "today_matchups.csv", parse_dates=["Game Date"])
+# === Load matchups (from get_scores output)
+box = pd.read_csv(DATA_DIR / "mlb_boxscores_cleaned.csv", parse_dates=["Game Date"])
 
-# === Load your training feature data (with ERA, hands, etc.)
-reference = pd.read_csv(DATA_DIR / "yrfi_model_input_with_era_and_team_rates.csv", parse_dates=["date"])
+# === Normalize team names and clean whitespace
+box["Away Team"] = box["Away Team"].str.strip().str.title()
+box["Home Team"] = box["Home Team"].str.strip().str.title()
 
-# === Get latest known values per team/hand
+# === Rename for consistency
+box.rename(columns={"Game Date": "date"}, inplace=True)
+
+# === Load enriched data from your main input source
+ref = pd.read_csv(DATA_DIR / "yrfi_model_input_with_era.csv", parse_dates=["date"])
+
+# === Match on team names and date, extract latest stats
 latest = (
-    reference.sort_values("date")
+    ref.sort_values("date")
     .groupby(["away_team", "home_team"])
     .tail(1)
+    .drop(columns=["yrfi", "date"])
     .reset_index(drop=True)
 )
 
-# === Merge team/pitcher features into today's matchups
-merged = matchups.merge(
-    latest.drop(columns=["date", "yrfi"]),  # drop target + date
+# === Merge enriched stats into today's box scores
+merged = box.merge(
+    latest,
     left_on=["Away Team", "Home Team"],
     right_on=["away_team", "home_team"],
     how="left"
 )
 
-# === Feature engineering
-merged["day_of_week"] = merged["Game Date"].dt.dayofweek
-if "away_hand" in merged.columns and "home_hand" in merged.columns:
-    merged["same_hand"] = (merged["away_hand"] == merged["home_hand"]).astype(int)
-else:
-    merged["same_hand"] = 0
+# === Add additional columns
+merged["day_of_week"] = merged["date"].dt.dayofweek
+merged["same_hand"] = (merged["away_hand"] == merged["home_hand"]).astype(int)
 
-# === Drop incomplete games
-required_cols = [
-    "home_era", "away_era", "home_team_avg_1st", "away_team_avg_1st",
-    "away_team", "home_team", "away_hand", "home_hand"
-]
-merged = merged.dropna(subset=required_cols)
+# === Drop incomplete rows
+required = ["away_hand", "home_hand", "away_era", "home_era"]
+merged = merged.dropna(subset=required)
 
-# === Rename for consistency
-merged.rename(columns={"Game Date": "date"}, inplace=True)
-
-# === Save it
-output_path = DATA_DIR / "yrfi_model_input_live.csv"
-merged.to_csv(output_path, index=False)
-print(f"✅ Saved live model input to: {output_path}")
+# === Save for modeling
+output = DATA_DIR / "yrfi_model_input_live_with_era.csv"
+merged.to_csv(output, index=False)
+print(f"✅ Final live input saved to: {output}")

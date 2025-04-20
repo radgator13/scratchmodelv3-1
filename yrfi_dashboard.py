@@ -8,20 +8,24 @@ st.title("🔥 YRFI Prediction Dashboard")
 
 # === Load Data ===
 preds = pd.read_csv("data/yrfi_predictions_pregame_with_odds.csv")
-results = pd.read_csv("data/mlb_boxscores_cleaned.csv")
+live = pd.read_csv("data/yrfi_model_input_live_with_era.csv")
 
-# Ensure consistent datetime
+# Normalize column names
 preds["Game Date"] = pd.to_datetime(preds["Game Date"])
-results["Game Date"] = pd.to_datetime(results["Game Date"])
+live["Game Date"] = pd.to_datetime(live["date"])
+live.rename(columns={"date": "Game Date"}, inplace=True)
 
-# Merge YRFI results into predictions
+# === Merge Predictions with Actual Outcomes ===
 merged = preds.merge(
-    results[["Game Date", "Away Team", "Home Team", "YRFI"]],
+    live[["Game Date", "Away Team", "Home Team", "Away 1st_x", "Home 1st_x"]],
     on=["Game Date", "Away Team", "Home Team"],
     how="left"
 )
 
-# === Fireball Confidence ===
+# === Calculate actual YRFI outcome ===
+merged["YRFI"] = ((merged["Away 1st_x"].fillna(0) > 0) | (merged["Home 1st_x"].fillna(0) > 0)).astype(int)
+
+# === Fireball Confidence Tiers ===
 def to_fireballs(p):
     if p >= 0.80: return "🔥🔥🔥🔥🔥"
     elif p >= 0.60: return "🔥🔥🔥🔥"
@@ -32,7 +36,7 @@ def to_fireballs(p):
 merged["YRFI🔥"] = merged["YRFI_Prob"].apply(to_fireballs)
 merged["NRFI🔥"] = merged["NRFI_Prob"].apply(lambda x: to_fireballs(1 - x))
 
-# === Define hit/miss outcome ===
+# === Determine prediction correctness ===
 def outcome_check(row):
     if pd.isna(row["YRFI"]):
         return ""
@@ -44,29 +48,20 @@ def outcome_check(row):
 
 merged["Correct"] = merged.apply(outcome_check, axis=1)
 
-# === Calendar Picker ===
+# === Calendar Selector ===
 today = datetime.today().date()
 tomorrow = today + timedelta(days=1)
 
-# Get all unique dates in the dataset
 available_dates = sorted(merged["Game Date"].dt.date.unique())
-
-# Always include today and tomorrow in the selector
 if today not in available_dates:
     available_dates.append(today)
 if tomorrow not in available_dates:
     available_dates.append(tomorrow)
-available_dates = sorted(list(set(available_dates)))  # deduplicate and sort
 
-# Set default date
-if tomorrow in available_dates:
-    default_date = tomorrow
-elif today in available_dates:
-    default_date = today
-else:
-    default_date = available_dates[-1]
+available_dates = sorted(set(available_dates))
 
-# Set up calendar input
+default_date = tomorrow if tomorrow in available_dates else today if today in available_dates else available_dates[-1]
+
 selected_date = st.date_input(
     "📅 Select Game Date",
     value=default_date,
@@ -74,57 +69,47 @@ selected_date = st.date_input(
     max_value=max(available_dates)
 )
 
-
-
 # === Filter by selected date ===
 filtered = merged[merged["Game Date"].dt.date == selected_date]
 
 # === Show Predictions Table ===
 if not filtered.empty:
     st.subheader(f"📋 Games for {selected_date.strftime('%Y-%m-%d')}")
-
     display_cols = ["Away Team", "Home Team", "YRFI_Prob", "YRFI🔥", "NRFI_Prob", "NRFI🔥", "YRFI", "Correct"]
     st.dataframe(filtered[display_cols].sort_values("YRFI_Prob", ascending=False), use_container_width=True)
 else:
     st.warning("No predictions available for this date.")
 
-# === Accuracy Summary Sections ===
-# Daily
+# === Accuracy Summary ===
 today_total = filtered.shape[0]
 today_correct = (filtered["Correct"] == "✅").sum()
 today_wrong = (filtered["Correct"] == "❌").sum()
 
-# Rolling (up to selected date)
 cumulative = merged[merged["Game Date"].dt.date <= selected_date]
 cumulative_total = cumulative.shape[0]
 cumulative_correct = (cumulative["Correct"] == "✅").sum()
 cumulative_wrong = (cumulative["Correct"] == "❌").sum()
 
-# === Summary Display ===
 st.markdown("---")
 st.subheader("📊 Prediction Accuracy Summary")
-
 col1, col2 = st.columns(2)
-
 with col1:
     st.markdown("#### 📅 Daily Accuracy")
     st.metric("Correct", today_correct)
     st.metric("Incorrect", today_wrong)
     st.metric("Total Predictions", today_total)
-
 with col2:
-    st.markdown("#### 🔁 Cumulative Accuracy (Up to Selected Date)")
+    st.markdown("#### 🔁 Cumulative Accuracy")
     st.metric("Correct", cumulative_correct)
     st.metric("Incorrect", cumulative_wrong)
     st.metric("Total Predictions", cumulative_total)
 
-# === Fireball Breakdown
+# === Fireball Tier Summary
 st.markdown("---")
 st.subheader("🔥 Fireball Tier Performance")
 
 tiers = ["🔥", "🔥🔥", "🔥🔥🔥", "🔥🔥🔥🔥", "🔥🔥🔥🔥🔥"]
-fire_df = merged[merged["YRFI🔥"].isin(tiers)]
-fire_df = fire_df[fire_df["Game Date"].dt.date <= selected_date]
+fire_df = cumulative[cumulative["YRFI🔥"].isin(tiers)]
 
 tier_stats = (
     fire_df.groupby("YRFI🔥")["Correct"]
@@ -139,7 +124,7 @@ tier_stats = tier_stats.reindex(tiers).fillna(0).astype(int)
 
 st.dataframe(tier_stats, use_container_width=True)
 
-# === Compact Summary
+# === Compact Summary View
 st.markdown("---")
 st.subheader("🔥 Fireball Accuracy Summary (Compact View)")
 
@@ -156,9 +141,8 @@ def summarize_fireballs(df):
 daily_stats = summarize_fireballs(filtered)
 rolling_stats = summarize_fireballs(cumulative)
 
-rows = []
-for tier in tiers:
-    rows.append({
+summary_df = pd.DataFrame([
+    {
         "Tier": tier,
         "Daily Correct": daily_stats[tier]["Correct"],
         "Daily Incorrect": daily_stats[tier]["Incorrect"],
@@ -166,7 +150,8 @@ for tier in tiers:
         "Rolling Correct": rolling_stats[tier]["Correct"],
         "Rolling Incorrect": rolling_stats[tier]["Incorrect"],
         "Rolling Total": rolling_stats[tier]["Total"],
-    })
+    }
+    for tier in tiers
+])
 
-summary_df = pd.DataFrame(rows)
 st.dataframe(summary_df.set_index("Tier"), use_container_width=True)

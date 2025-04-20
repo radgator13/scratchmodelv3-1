@@ -1,16 +1,15 @@
-﻿# extract_era_from_rotowire_blocked.py
-import pandas as pd
+﻿import pandas as pd
 import re
 from pathlib import Path
 
 DATA_DIR = Path("data")
-games = pd.read_csv(DATA_DIR / "yrfi_model_input.csv", parse_dates=["date"])
+
+# Load model input for today/tomorrow
+games = pd.read_csv(DATA_DIR / "yrfi_model_input_live.csv", parse_dates=["date"])
 raw = pd.read_csv(DATA_DIR / "rotowire-projstarters.csv")
 
-# Date columns from rotowire header
+# Setup
 date_cols = raw.columns[1:]
-
-# Create container for cleaned rows
 records = []
 
 TEAM_MAP = {
@@ -26,11 +25,11 @@ TEAM_MAP = {
     'TEX': 'Texas Rangers', 'TOR': 'Toronto Blue Jays', 'WSH': 'Washington Nationals'
 }
 
-# Iterate through rows in groups of 3: [starter, game, stats]
+# Extract ERA records from rotowire
 for i in range(0, len(raw), 3):
     try:
         starter_row = raw.iloc[i]
-        stats_row = raw.iloc[i+2]
+        stats_row = raw.iloc[i + 2]
     except IndexError:
         continue
 
@@ -53,10 +52,7 @@ for i in range(0, len(raw), 3):
         if pd.isna(starter) or pd.isna(stats):
             continue
 
-        # Clean starter name
         starter_clean = starter.split(" (")[0].strip()
-
-        # Extract ERA
         match = re.search(r"(\d+\.\d+)\s*ERA", stats)
         era = float(match.group(1)) if match else None
 
@@ -67,13 +63,13 @@ for i in range(0, len(raw), 3):
             "era": era
         })
 
-# Create long DataFrame
 era_df = pd.DataFrame(records)
 
-# Merge into game data for both home and away
+# Add starter_clean columns to games
 for side in ["home", "away"]:
     games[f"{side}_starter_clean"] = games[f"{side}_starter"].str.extract(r"^(.*?)\s\(")[0]
 
+    # Prepare merge columns
     games = pd.merge(
         games,
         era_df.rename(columns={
@@ -81,13 +77,17 @@ for side in ["home", "away"]:
             "starter_clean": f"{side}_starter_clean",
             "era": f"{side}_era"
         }),
-        on=["date", f"{side}_team", f"{side}_starter_clean"],
-        how="left"
+        how="left",
+        on=["date", f"{side}_team", f"{side}_starter_clean"]
     )
 
-    print(f"🔍 {side}_era nulls after merge: {games[f'{side}_era'].isna().sum()}")
+    # Check for successful merge
+    if f"{side}_era" in games.columns:
+        print(f"✅ {side}_era merged. Nulls: {games[f'{side}_era'].isna().sum()}")
+    else:
+        print(f"❌ Failed to merge {side}_era!")
 
-# Save updated data
-out_path = DATA_DIR / "yrfi_model_input_with_era.csv"
+# Save output
+out_path = DATA_DIR / "yrfi_model_input_live_with_era.csv"
 games.to_csv(out_path, index=False)
-print(f"\n✅ ERA values extracted and saved to: {out_path.resolve()}")
+print(f"\n✅ ERA-enriched live input saved to: {out_path.resolve()}")
